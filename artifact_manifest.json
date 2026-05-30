@@ -1,0 +1,76 @@
+{
+  "generated_utc": "2026-05-30T20:37:26.103114+00:00",
+  "python_version": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+  "reproduction_order": [
+    "abm_simulation_canonical.py",
+    "robustness_ablation_canonical.py",
+    "generate_figures.py",
+    "make_artifact_manifest.py"
+  ],
+  "artifacts": [
+    {
+      "path": "README.md",
+      "exists": true,
+      "size_bytes": 3138,
+      "modified_utc": "2026-05-30T20:37:19.438075+00:00",
+      "sha256": "e8579898eafa6627ac22d588aeb0fc4e8a27e661b2803e73cdfe93c675c6e65d"
+    },
+    {
+      "path": "requirements.txt",
+      "exists": true,
+      "size_bytes": 17,
+      "modified_utc": "2026-05-30T20:28:48.882957+00:00",
+      "sha256": "6d4cdf924e8b6fe2cf827f647ca740148e2e8b4c44ea31578dbea46cbd403417"
+    },
+    {
+      "path": "generate_figures.py",
+      "exists": true,
+      "size_bytes": 10289,
+      "modified_utc": "2026-05-30T20:30:59.855352+00:00",
+      "sha256": "66a0584ab34892e4fcc046a97f5fdfbc8b508732278d0b2e29d2b74ece63c4d8"
+    },
+    {
+      "path": "abm_simulation_canonical.py",
+      "exists": true,
+      "size_bytes": 11253,
+      "modified_utc": "2026-05-30T20:30:59.855846+00:00",
+      "sha256": "c9ebfa6e5aac7b31c6167c40080094d6846da741963474b4f57544bb4cee7d67"
+    },
+    {
+      "path": "robustness_ablation_canonical.py",
+      "exists": true,
+      "size_bytes": 17222,
+      "modified_utc": "2026-05-30T20:30:59.854749+00:00",
+      "sha256": "630e62c9713aeed79ee940da4044b12893277b759ebb8ad53112046de034aef5"
+    },
+    {
+      "path": "make_artifact_manifest.py",
+      "exists": true,
+      "size_bytes": 1885,
+      "modified_utc": "2026-05-30T20:37:17.400470+00:00",
+      "sha256": "ff4ccd8354cc3653e3c8c3daf9ef393261c6ecc2f203803c6db44d62fe151a73"
+    },
+    {
+      "path": "simulation_results_canonical.json",
+      "exists": true,
+      "size_bytes": 41641,
+      "modified_utc": "2026-05-30T20:28:48.877046+00:00",
+      "sha256": "66c1d8d1444df80a40e6b9bedd02f0b170c88083272bee1d5c74508ef77a5093"
+    },
+    {
+      "path": "robustness_ablation_canonical.json",
+      "exists": true,
+      "size_bytes": 104487,
+      "modified_utc": "2026-05-30T20:28:48.878415+00:00",
+      "sha256": "a71c5e54f8ed33b3e7493e65f81e6b27da525755d7045911cc7c3af648990379"
+    },
+    {
+      "path": "sensitivity_analysis_canonical.json",
+      "exists": true,
+      "size_bytes": 3602,
+      "modified_utc": "2026-05-30T20:28:48.870990+00:00",
+      "sha256": "2db29c50dc01781f6a8177ed71b3262495d090c5c0c5c028bd207075dd5cb899"
+    }
+  ]
+}

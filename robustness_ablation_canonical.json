@@ -1,0 +1,3615 @@
+{
+  "seed": 42,
+  "n_monte_carlo": 200,
+  "mechanism_ablation": [
+    {
+      "variant": "Canonical",
+      "hotl_tipping_point_epoch": 18,
+      "hitl_tipping_point_epoch": 46,
+      "hotl_final_skill": 0.2884,
+      "hotl_quality_skill_gap": 0.2355
+    },
+    {
+      "variant": "No Red Queen",
+      "hotl_tipping_point_epoch": 34,
+      "hitl_tipping_point_epoch": null,
+      "hotl_final_skill": 0.2884,
+      "hotl_quality_skill_gap": 0.2355
+    },
+    {
+      "variant": "No lazy contagion",
+      "hotl_tipping_point_epoch": 18,
+      "hitl_tipping_point_epoch": 46,
+      "hotl_final_skill": 0.2925,
+      "hotl_quality_skill_gap": 0.2305
+    },
+    {
+      "variant": "No adaptive engagement",
+      "hotl_tipping_point_epoch": 18,
+      "hitl_tipping_point_epoch": 46,
+      "hotl_final_skill": 0.287,
+      "hotl_quality_skill_gap": 0.2368
+    },
+    {
+      "variant": "No knowledge spillover",
+      "hotl_tipping_point_epoch": 15,
+      "hitl_tipping_point_epoch": 45,
+      "hotl_final_skill": 0.106,
+      "hotl_quality_skill_gap": 0.3315
+    }
+  ],
+  "red_queen_sweep": [
+    {
+      "red_queen_rate": 0.0,
+      "hotl_tipping_point_epoch": 34,
+      "hitl_tipping_point_epoch": null,
+      "hotl_final_skill": 0.2884
+    },
+    {
+      "red_queen_rate": 0.0025,
+      "hotl_tipping_point_epoch": 23,
+      "hitl_tipping_point_epoch": null,
+      "hotl_final_skill": 0.2884
+    },
+    {
+      "red_queen_rate": 0.005,
+      "hotl_tipping_point_epoch": 18,
+      "hitl_tipping_point_epoch": 46,
+      "hotl_final_skill": 0.2884
+    },
+    {
+      "red_queen_rate": 0.0075,
+      "hotl_tipping_point_epoch": 15,
+      "hitl_tipping_point_epoch": 30,
+      "hotl_final_skill": 0.2884
+    },
+    {
+      "red_queen_rate": 0.01,
+      "hotl_tipping_point_epoch": 13,
+      "hitl_tipping_point_epoch": 22,
+      "hotl_final_skill": 0.2884
+    }
+  ],
+  "structural_sensitivity": {
+    "lazy_contagion_rate": [
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.2925,
+        "final_quality": 0.523,
+        "quality_skill_gap": 0.2305,
+        "param_value": 0.0
+      },
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.2905,
+        "final_quality": 0.5234,
+        "quality_skill_gap": 0.233,
+        "param_value": 0.15
+      },
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.2884,
+        "final_quality": 0.5239,
+        "quality_skill_gap": 0.2355,
+        "param_value": 0.3
+      },
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.2864,
+        "final_quality": 0.5244,
+        "quality_skill_gap": 0.238,
+        "param_value": 0.45
+      }
+    ],
+    "adaptive_engagement_cap": [
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.287,
+        "final_quality": 0.5238,
+        "quality_skill_gap": 0.2368,
+        "param_value": 0.0
+      },
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.2884,
+        "final_quality": 0.5239,
+        "quality_skill_gap": 0.2355,
+        "param_value": 0.15
+      },
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.2884,
+        "final_quality": 0.5239,
+        "quality_skill_gap": 0.2355,
+        "param_value": 0.3
+      },
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.2884,
+        "final_quality": 0.5239,
+        "quality_skill_gap": 0.2355,
+        "param_value": 0.45
+      }
+    ],
+    "ai_interaction_floor": [
+      {
+        "tipping_point_epoch": 17,
+        "final_skill": 0.1947,
+        "final_quality": 0.3229,
+        "quality_skill_gap": 0.1281,
+        "param_value": 0.25
+      },
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.2884,
+        "final_quality": 0.5239,
+        "quality_skill_gap": 0.2355,
+        "param_value": 0.5
+      },
+      {
+        "tipping_point_epoch": 21,
+        "final_skill": 0.3751,
+        "final_quality": 0.6871,
+        "quality_skill_gap": 0.3119,
+        "param_value": 0.75
+      }
+    ],
+    "ai_interaction_form": [
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.2884,
+        "final_quality": 0.5239,
+        "quality_skill_gap": 0.2355,
+        "param_value": "linear"
+      },
+      {
+        "tipping_point_epoch": 20,
+        "final_skill": 0.3581,
+        "final_quality": 0.6504,
+        "quality_skill_gap": 0.2923,
+        "param_value": "concave"
+      },
+      {
+        "tipping_point_epoch": 16,
+        "final_skill": 0.2235,
+        "final_quality": 0.4263,
+        "quality_skill_gap": 0.2029,
+        "param_value": "convex"
+      },
+      {
+        "tipping_point_epoch": 20,
+        "final_skill": 0.2382,
+        "final_quality": 0.4073,
+        "quality_skill_gap": 0.169,
+        "param_value": "threshold"
+      }
+    ],
+    "recovery_switch_epoch": [
+      {
+        "tipping_point_epoch": 30,
+        "final_skill": 0.5638,
+        "final_quality": 0.4439,
+        "quality_skill_gap": -0.1199,
+        "param_value": 10
+      },
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.5106,
+        "final_quality": 0.3998,
+        "quality_skill_gap": -0.1108,
+        "param_value": 18
+      },
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.4377,
+        "final_quality": 0.3395,
+        "quality_skill_gap": -0.0982,
+        "param_value": 30
+      },
+      {
+        "tipping_point_epoch": 18,
+        "final_skill": 0.3572,
+        "final_quality": 0.2728,
+        "quality_skill_gap": -0.0844,
+        "param_value": 45
+      }
+    ]
+  },
+  "joint_stress_tests": [
+    {
+      "tipping_point_epoch": 18,
+      "final_skill": 0.2884,
+      "final_quality": 0.5239,
+      "quality_skill_gap": 0.2355,
+      "scenario": "Canonical HOTL",
+      "regime": "loose",
+      "interpretation": "Baseline structural scenario."
+    },
+    {
+      "tipping_point_epoch": null,
+      "final_skill": 0.6779,
+      "final_quality": 0.7312,
+      "quality_skill_gap": 0.0533,
+      "scenario": "Favorable HOTL boundary",
+      "regime": "loose",
+      "interpretation": "Slow threshold growth, low atrophy, higher passive engagement, and easier AI extraction."
+    },
+    {
+      "tipping_point_epoch": null,
+      "final_skill": 0.5634,
+      "final_quality": 0.6351,
+      "quality_skill_gap": 0.0717,
+      "scenario": "Intermediate HOTL boundary",
+      "regime": "loose",
+      "interpretation": "Lower atrophy and slower threshold growth with moderate passive engagement."
+    },
+    {
+      "tipping_point_epoch": 8,
+      "final_skill": 0.0,
+      "final_quality": 0.1932,
+      "quality_skill_gap": 0.1932,
+      "scenario": "Adverse HOTL stress",
+      "regime": "loose",
+      "interpretation": "Fast threshold growth, high atrophy, low passive engagement, and harder AI extraction."
+    },
+    {
+      "tipping_point_epoch": 46,
+      "final_skill": 0.6358,
+      "final_quality": 0.5035,
+      "quality_skill_gap": -0.1323,
+      "scenario": "Canonical HITL",
+      "regime": "strict",
+      "interpretation": "Baseline strict-verification scenario."
+    },
+    {
+      "tipping_point_epoch": null,
+      "final_skill": 0.8504,
+      "final_quality": 0.7939,
+      "quality_skill_gap": -0.0565,
+      "scenario": "Favorable HITL boundary",
+      "regime": "strict",
+      "interpretation": "No Red Queen pressure, low atrophy, high verification engagement, and lower penalty."
+    },
+    {
+      "tipping_point_epoch": 12,
+      "final_skill": 0.1694,
+      "final_quality": 0.0853,
+      "quality_skill_gap": -0.0841,
+      "scenario": "Adverse HITL stress",
+      "regime": "strict",
+      "interpretation": "Fast threshold growth, high atrophy, lower verification engagement, and higher penalty."
+    }
+  ],
+  "lhs_uncertainty": {
+    "n_samples": 64,
+    "n_monte_carlo_per_scenario": 60,
+    "ranges": {
+      "loose": {
+        "alpha_atrophy": [
+          0.005,
+          0.02
+        ],
+        "red_queen_rate": [
+          0.0,
+          0.01
+        ],
+        "ai_interaction_floor": [
+          0.25,
+          0.75
+        ],
+        "base_engagement": [
+          0.1,
+          0.5
+        ],
+        "lazy_contagion_rate": [
+          0.0,
+          0.45
+        ],
+        "penalty": "fixed at 0.00"
+      },
+      "strict": {
+        "alpha_atrophy": [
+          0.005,
+          0.02
+        ],
+        "red_queen_rate": [
+          0.0,
+          0.01
+        ],
+        "ai_interaction_floor": [
+          0.25,
+          0.75
+        ],
+        "base_engagement": [
+          0.5,
+          0.9
+        ],
+        "penalty": [
+          0.05,
+          0.25
+        ],
+        "lazy_contagion_rate": "canonical 0.30"
+      }
+    },
+    "samples": {
+      "loose": [
+        {
+          "tipping_point_epoch": 12,
+          "final_skill": 0.2734,
+          "final_quality": 0.5966,
+          "quality_skill_gap": 0.3232,
+          "scenario_id": 0,
+          "parameters": {
+            "alpha_atrophy": 0.01249,
+            "red_queen_rate": 0.00974,
+            "ai_interaction_floor": 0.66519,
+            "base_engagement": 0.14343,
+            "lazy_contagion_rate": 0.27869
+          }
+        },
+        {
+          "tipping_point_epoch": 17,
+          "final_skill": 0.5118,
+          "final_quality": 0.6674,
+          "quality_skill_gap": 0.1555,
+          "scenario_id": 1,
+          "parameters": {
+            "alpha_atrophy": 0.00658,
+            "red_queen_rate": 0.00999,
+            "ai_interaction_floor": 0.65488,
+            "base_engagement": 0.22309,
+            "lazy_contagion_rate": 0.34811
+          }
+        },
+        {
+          "tipping_point_epoch": 19,
+          "final_skill": 0.0621,
+          "final_quality": 0.2122,
+          "quality_skill_gap": 0.1501,
+          "scenario_id": 2,
+          "parameters": {
+            "alpha_atrophy": 0.01994,
+            "red_queen_rate": 0.00128,
+            "ai_interaction_floor": 0.2979,
+            "base_engagement": 0.36577,
+            "lazy_contagion_rate": 0.2727
+          }
+        },
+        {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.1937,
+          "final_quality": 0.2919,
+          "quality_skill_gap": 0.0982,
+          "scenario_id": 3,
+          "parameters": {
+            "alpha_atrophy": 0.0148,
+            "red_queen_rate": 0.00776,
+            "ai_interaction_floor": 0.25542,
+            "base_engagement": 0.3351,
+            "lazy_contagion_rate": 0.1897
+          }
+        },
+        {
+          "tipping_point_epoch": 17,
+          "final_skill": 0.1333,
+          "final_quality": 0.3983,
+          "quality_skill_gap": 0.265,
+          "scenario_id": 4,
+          "parameters": {
+            "alpha_atrophy": 0.01515,
+            "red_queen_rate": 0.00305,
+            "ai_interaction_floor": 0.46707,
+            "base_engagement": 0.19083,
+            "lazy_contagion_rate": 0.14661
+          }
+        },
+        {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.2964,
+          "final_quality": 0.5203,
+          "quality_skill_gap": 0.2239,
+          "scenario_id": 5,
+          "parameters": {
+            "alpha_atrophy": 0.0109,
+            "red_queen_rate": 0.00517,
+            "ai_interaction_floor": 0.52036,
+            "base_engagement": 0.17405,
+            "lazy_contagion_rate": 0.22419
+          }
+        },
+        {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.0004,
+          "final_quality": 0.3371,
+          "quality_skill_gap": 0.3367,
+          "scenario_id": 6,
+          "parameters": {
+            "alpha_atrophy": 0.01922,
+            "red_queen_rate": 0.00415,
+            "ai_interaction_floor": 0.44479,
+            "base_engagement": 0.11455,
+            "lazy_contagion_rate": 0.10689
+          }
+        },
+        {
+          "tipping_point_epoch": 13,
+          "final_skill": 0.1594,
+          "final_quality": 0.4561,
+          "quality_skill_gap": 0.2967,
+          "scenario_id": 7,
+          "parameters": {
+            "alpha_atrophy": 0.01849,
+            "red_queen_rate": 0.007,
+            "ai_interaction_floor": 0.61575,
+            "base_engagement": 0.32559,
+            "lazy_contagion_rate": 0.2893
+          }
+        },
+        {
+          "tipping_point_epoch": 28,
+          "final_skill": 0.4863,
+          "final_quality": 0.6941,
+          "quality_skill_gap": 0.2078,
+          "scenario_id": 8,
+          "parameters": {
+            "alpha_atrophy": 0.00691,
+            "red_queen_rate": 0.00492,
+            "ai_interaction_floor": 0.7111,
+            "base_engagement": 0.13311,
+            "lazy_contagion_rate": 0.20824
+          }
+        },
+        {
+          "tipping_point_epoch": 37,
+          "final_skill": 0.4357,
+          "final_quality": 0.5767,
+          "quality_skill_gap": 0.1411,
+          "scenario_id": 9,
+          "parameters": {
+            "alpha_atrophy": 0.00857,
+            "red_queen_rate": 0.00251,
+            "ai_interaction_floor": 0.53596,
+            "base_engagement": 0.26961,
+            "lazy_contagion_rate": 0.14875
+          }
+        },
+        {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.2534,
+          "final_quality": 0.4307,
+          "quality_skill_gap": 0.1773,
+          "scenario_id": 10,
+          "parameters": {
+            "alpha_atrophy": 0.01641,
+            "red_queen_rate": 0.00874,
+            "ai_interaction_floor": 0.49841,
+            "base_engagement": 0.40075,
+            "lazy_contagion_rate": 0.33854
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6059,
+          "final_quality": 0.6469,
+          "quality_skill_gap": 0.041,
+          "scenario_id": 11,
+          "parameters": {
+            "alpha_atrophy": 0.00587,
+            "red_queen_rate": 0.00272,
+            "ai_interaction_floor": 0.49085,
+            "base_engagement": 0.46102,
+            "lazy_contagion_rate": 0.31344
+          }
+        },
+        {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.1219,
+          "final_quality": 0.2648,
+          "quality_skill_gap": 0.1429,
+          "scenario_id": 12,
+          "parameters": {
+            "alpha_atrophy": 0.01737,
+            "red_queen_rate": 0.00672,
+            "ai_interaction_floor": 0.30565,
+            "base_engagement": 0.34728,
+            "lazy_contagion_rate": 0.39676
+          }
+        },
+        {
+          "tipping_point_epoch": 21,
+          "final_skill": 0.4372,
+          "final_quality": 0.5925,
+          "quality_skill_gap": 0.1553,
+          "scenario_id": 13,
+          "parameters": {
+            "alpha_atrophy": 0.01258,
+            "red_queen_rate": 0.00663,
+            "ai_interaction_floor": 0.68972,
+            "base_engagement": 0.42762,
+            "lazy_contagion_rate": 0.15985
+          }
+        },
+        {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.3239,
+          "final_quality": 0.5524,
+          "quality_skill_gap": 0.2285,
+          "scenario_id": 14,
+          "parameters": {
+            "alpha_atrophy": 0.01221,
+            "red_queen_rate": 0.00879,
+            "ai_interaction_floor": 0.60739,
+            "base_engagement": 0.25454,
+            "lazy_contagion_rate": 0.17065
+          }
+        },
+        {
+          "tipping_point_epoch": 51,
+          "final_skill": 0.3801,
+          "final_quality": 0.443,
+          "quality_skill_gap": 0.0629,
+          "scenario_id": 15,
+          "parameters": {
+            "alpha_atrophy": 0.01308,
+            "red_queen_rate": 0.0002,
+            "ai_interaction_floor": 0.32342,
+            "base_engagement": 0.46419,
+            "lazy_contagion_rate": 0.3544
+          }
+        },
+        {
+          "tipping_point_epoch": 32,
+          "final_skill": 0.5311,
+          "final_quality": 0.6406,
+          "quality_skill_gap": 0.1095,
+          "scenario_id": 16,
+          "parameters": {
+            "alpha_atrophy": 0.00596,
+            "red_queen_rate": 0.00512,
+            "ai_interaction_floor": 0.56759,
+            "base_engagement": 0.25678,
+            "lazy_contagion_rate": 0.08277
+          }
+        },
+        {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.3273,
+          "final_quality": 0.5941,
+          "quality_skill_gap": 0.2668,
+          "scenario_id": 17,
+          "parameters": {
+            "alpha_atrophy": 0.01396,
+            "red_queen_rate": 0.00577,
+            "ai_interaction_floor": 0.73479,
+            "base_engagement": 0.28626,
+            "lazy_contagion_rate": 0.06891
+          }
+        },
+        {
+          "tipping_point_epoch": 19,
+          "final_skill": 0.4169,
+          "final_quality": 0.5115,
+          "quality_skill_gap": 0.0946,
+          "scenario_id": 18,
+          "parameters": {
+            "alpha_atrophy": 0.00888,
+            "red_queen_rate": 0.00743,
+            "ai_interaction_floor": 0.39926,
+            "base_engagement": 0.32244,
+            "lazy_contagion_rate": 0.41774
+          }
+        },
+        {
+          "tipping_point_epoch": 28,
+          "final_skill": 0.3569,
+          "final_quality": 0.5899,
+          "quality_skill_gap": 0.233,
+          "scenario_id": 19,
+          "parameters": {
+            "alpha_atrophy": 0.01378,
+            "red_queen_rate": 0.00245,
+            "ai_interaction_floor": 0.72793,
+            "base_engagement": 0.33857,
+            "lazy_contagion_rate": 0.13802
+          }
+        },
+        {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.0968,
+          "final_quality": 0.3253,
+          "quality_skill_gap": 0.2284,
+          "scenario_id": 20,
+          "parameters": {
+            "alpha_atrophy": 0.01608,
+            "red_queen_rate": 0.00168,
+            "ai_interaction_floor": 0.39558,
+            "base_engagement": 0.24134,
+            "lazy_contagion_rate": 0.41227
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.4978,
+          "final_quality": 0.5974,
+          "quality_skill_gap": 0.0996,
+          "scenario_id": 21,
+          "parameters": {
+            "alpha_atrophy": 0.00567,
+            "red_queen_rate": 7e-05,
+            "ai_interaction_floor": 0.46889,
+            "base_engagement": 0.21377,
+            "lazy_contagion_rate": 0.19414
+          }
+        },
+        {
+          "tipping_point_epoch": 22,
+          "final_skill": 0.415,
+          "final_quality": 0.6705,
+          "quality_skill_gap": 0.2555,
+          "scenario_id": 22,
+          "parameters": {
+            "alpha_atrophy": 0.00987,
+            "red_queen_rate": 0.00539,
+            "ai_interaction_floor": 0.74681,
+            "base_engagement": 0.19771,
+            "lazy_contagion_rate": 0.32133
+          }
+        },
+        {
+          "tipping_point_epoch": 24,
+          "final_skill": 0.3252,
+          "final_quality": 0.469,
+          "quality_skill_gap": 0.1437,
+          "scenario_id": 23,
+          "parameters": {
+            "alpha_atrophy": 0.01347,
+            "red_queen_rate": 0.00345,
+            "ai_interaction_floor": 0.47742,
+            "base_engagement": 0.37352,
+            "lazy_contagion_rate": 0.18077
+          }
+        },
+        {
+          "tipping_point_epoch": 15,
+          "final_skill": 0.0233,
+          "final_quality": 0.2692,
+          "quality_skill_gap": 0.2459,
+          "scenario_id": 24,
+          "parameters": {
+            "alpha_atrophy": 0.01695,
+            "red_queen_rate": 0.00282,
+            "ai_interaction_floor": 0.36161,
+            "base_engagement": 0.17908,
+            "lazy_contagion_rate": 0.16308
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.5899,
+          "final_quality": 0.6648,
+          "quality_skill_gap": 0.0749,
+          "scenario_id": 25,
+          "parameters": {
+            "alpha_atrophy": 0.0078,
+            "red_queen_rate": 0.00228,
+            "ai_interaction_floor": 0.65867,
+            "base_engagement": 0.48842,
+            "lazy_contagion_rate": 0.30446
+          }
+        },
+        {
+          "tipping_point_epoch": 23,
+          "final_skill": 0.5049,
+          "final_quality": 0.6201,
+          "quality_skill_gap": 0.1152,
+          "scenario_id": 26,
+          "parameters": {
+            "alpha_atrophy": 0.009,
+            "red_queen_rate": 0.00721,
+            "ai_interaction_floor": 0.61801,
+            "base_engagement": 0.41305,
+            "lazy_contagion_rate": 0.4452
+          }
+        },
+        {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.0653,
+          "final_quality": 0.4908,
+          "quality_skill_gap": 0.4255,
+          "scenario_id": 27,
+          "parameters": {
+            "alpha_atrophy": 0.01782,
+            "red_queen_rate": 0.00752,
+            "ai_interaction_floor": 0.62552,
+            "base_engagement": 0.1583,
+            "lazy_contagion_rate": 0.38164
+          }
+        },
+        {
+          "tipping_point_epoch": 16,
+          "final_skill": 0.3052,
+          "final_quality": 0.3844,
+          "quality_skill_gap": 0.0791,
+          "scenario_id": 28,
+          "parameters": {
+            "alpha_atrophy": 0.01282,
+            "red_queen_rate": 0.00786,
+            "ai_interaction_floor": 0.28684,
+            "base_engagement": 0.38,
+            "lazy_contagion_rate": 0.36193
+          }
+        },
+        {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.1773,
+          "final_quality": 0.3273,
+          "quality_skill_gap": 0.15,
+          "scenario_id": 29,
+          "parameters": {
+            "alpha_atrophy": 0.01081,
+            "red_queen_rate": 0.00369,
+            "ai_interaction_floor": 0.27972,
+            "base_engagement": 0.10854,
+            "lazy_contagion_rate": 0.02146
+          }
+        },
+        {
+          "tipping_point_epoch": 17,
+          "final_skill": 0.2652,
+          "final_quality": 0.3577,
+          "quality_skill_gap": 0.0925,
+          "scenario_id": 30,
+          "parameters": {
+            "alpha_atrophy": 0.01823,
+            "red_queen_rate": 0.00614,
+            "ai_interaction_floor": 0.34893,
+            "base_engagement": 0.47697,
+            "lazy_contagion_rate": 0.00729
+          }
+        },
+        {
+          "tipping_point_epoch": 20,
+          "final_skill": 0.1044,
+          "final_quality": 0.3153,
+          "quality_skill_gap": 0.2109,
+          "scenario_id": 31,
+          "parameters": {
+            "alpha_atrophy": 0.01758,
+            "red_queen_rate": 0.00081,
+            "ai_interaction_floor": 0.40735,
+            "base_engagement": 0.28099,
+            "lazy_contagion_rate": 0.03239
+          }
+        },
+        {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.0867,
+          "final_quality": 0.4496,
+          "quality_skill_gap": 0.363,
+          "scenario_id": 32,
+          "parameters": {
+            "alpha_atrophy": 0.01807,
+            "red_queen_rate": 0.0007,
+            "ai_interaction_floor": 0.5956,
+            "base_engagement": 0.2018,
+            "lazy_contagion_rate": 0.12308
+          }
+        },
+        {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.1313,
+          "final_quality": 0.5149,
+          "quality_skill_gap": 0.3836,
+          "scenario_id": 33,
+          "parameters": {
+            "alpha_atrophy": 0.01966,
+            "red_queen_rate": 0.0095,
+            "ai_interaction_floor": 0.71918,
+            "base_engagement": 0.30497,
+            "lazy_contagion_rate": 0.36646
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.5385,
+          "final_quality": 0.5801,
+          "quality_skill_gap": 0.0416,
+          "scenario_id": 34,
+          "parameters": {
+            "alpha_atrophy": 0.00518,
+            "red_queen_rate": 0.00099,
+            "ai_interaction_floor": 0.35903,
+            "base_engagement": 0.31408,
+            "lazy_contagion_rate": 0.21124
+          }
+        },
+        {
+          "tipping_point_epoch": 39,
+          "final_skill": 0.4158,
+          "final_quality": 0.5119,
+          "quality_skill_gap": 0.0962,
+          "scenario_id": 35,
+          "parameters": {
+            "alpha_atrophy": 0.00743,
+            "red_queen_rate": 0.00194,
+            "ai_interaction_floor": 0.37441,
+            "base_engagement": 0.23038,
+            "lazy_contagion_rate": 0.08928
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.4581,
+          "final_quality": 0.5119,
+          "quality_skill_gap": 0.0538,
+          "scenario_id": 36,
+          "parameters": {
+            "alpha_atrophy": 0.01134,
+            "red_queen_rate": 0.00061,
+            "ai_interaction_floor": 0.37519,
+            "base_engagement": 0.48224,
+            "lazy_contagion_rate": 0.04386
+          }
+        },
+        {
+          "tipping_point_epoch": 27,
+          "final_skill": 0.371,
+          "final_quality": 0.5553,
+          "quality_skill_gap": 0.1844,
+          "scenario_id": 37,
+          "parameters": {
+            "alpha_atrophy": 0.00941,
+            "red_queen_rate": 0.00318,
+            "ai_interaction_floor": 0.53022,
+            "base_engagement": 0.21084,
+            "lazy_contagion_rate": 0.328
+          }
+        },
+        {
+          "tipping_point_epoch": 24,
+          "final_skill": 0.3041,
+          "final_quality": 0.4425,
+          "quality_skill_gap": 0.1385,
+          "scenario_id": 38,
+          "parameters": {
+            "alpha_atrophy": 0.01448,
+            "red_queen_rate": 0.0033,
+            "ai_interaction_floor": 0.4516,
+            "base_engagement": 0.38433,
+            "lazy_contagion_rate": 0.09872
+          }
+        },
+        {
+          "tipping_point_epoch": 12,
+          "final_skill": 0.0416,
+          "final_quality": 0.3603,
+          "quality_skill_gap": 0.3187,
+          "scenario_id": 39,
+          "parameters": {
+            "alpha_atrophy": 0.01652,
+            "red_queen_rate": 0.00587,
+            "ai_interaction_floor": 0.45678,
+            "base_engagement": 0.14948,
+            "lazy_contagion_rate": 0.33708
+          }
+        },
+        {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.1037,
+          "final_quality": 0.4285,
+          "quality_skill_gap": 0.3248,
+          "scenario_id": 40,
+          "parameters": {
+            "alpha_atrophy": 0.01863,
+            "red_queen_rate": 0.00845,
+            "ai_interaction_floor": 0.58787,
+            "base_engagement": 0.24434,
+            "lazy_contagion_rate": 0.00461
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.5096,
+          "final_quality": 0.5284,
+          "quality_skill_gap": 0.0189,
+          "scenario_id": 41,
+          "parameters": {
+            "alpha_atrophy": 0.00824,
+            "red_queen_rate": 0.00033,
+            "ai_interaction_floor": 0.26719,
+            "base_engagement": 0.45561,
+            "lazy_contagion_rate": 0.42475
+          }
+        },
+        {
+          "tipping_point_epoch": 28,
+          "final_skill": 0.4683,
+          "final_quality": 0.5568,
+          "quality_skill_gap": 0.0885,
+          "scenario_id": 42,
+          "parameters": {
+            "alpha_atrophy": 0.0106,
+            "red_queen_rate": 0.00484,
+            "ai_interaction_floor": 0.50182,
+            "base_engagement": 0.44584,
+            "lazy_contagion_rate": 0.19726
+          }
+        },
+        {
+          "tipping_point_epoch": 35,
+          "final_skill": 0.3333,
+          "final_quality": 0.4256,
+          "quality_skill_gap": 0.0924,
+          "scenario_id": 43,
+          "parameters": {
+            "alpha_atrophy": 0.0116,
+            "red_queen_rate": 0.00118,
+            "ai_interaction_floor": 0.33048,
+            "base_engagement": 0.35358,
+            "lazy_contagion_rate": 0.40508
+          }
+        },
+        {
+          "tipping_point_epoch": 16,
+          "final_skill": 0.3634,
+          "final_quality": 0.4631,
+          "quality_skill_gap": 0.0997,
+          "scenario_id": 44,
+          "parameters": {
+            "alpha_atrophy": 0.01325,
+            "red_queen_rate": 0.00824,
+            "ai_interaction_floor": 0.41734,
+            "base_engagement": 0.42286,
+            "lazy_contagion_rate": 0.04079
+          }
+        },
+        {
+          "tipping_point_epoch": 36,
+          "final_skill": 0.375,
+          "final_quality": 0.4774,
+          "quality_skill_gap": 0.1024,
+          "scenario_id": 45,
+          "parameters": {
+            "alpha_atrophy": 0.0064,
+            "red_queen_rate": 0.00154,
+            "ai_interaction_floor": 0.31975,
+            "base_engagement": 0.1023,
+            "lazy_contagion_rate": 0.44007
+          }
+        },
+        {
+          "tipping_point_epoch": 22,
+          "final_skill": 0.3145,
+          "final_quality": 0.4798,
+          "quality_skill_gap": 0.1653,
+          "scenario_id": 46,
+          "parameters": {
+            "alpha_atrophy": 0.01,
+            "red_queen_rate": 0.00405,
+            "ai_interaction_floor": 0.42942,
+            "base_engagement": 0.18628,
+            "lazy_contagion_rate": 0.07684
+          }
+        },
+        {
+          "tipping_point_epoch": 20,
+          "final_skill": 0.5197,
+          "final_quality": 0.5454,
+          "quality_skill_gap": 0.0257,
+          "scenario_id": 47,
+          "parameters": {
+            "alpha_atrophy": 0.00721,
+            "red_queen_rate": 0.00891,
+            "ai_interaction_floor": 0.29484,
+            "base_engagement": 0.40698,
+            "lazy_contagion_rate": 0.11338
+          }
+        },
+        {
+          "tipping_point_epoch": 20,
+          "final_skill": 0.3875,
+          "final_quality": 0.5755,
+          "quality_skill_gap": 0.1881,
+          "scenario_id": 48,
+          "parameters": {
+            "alpha_atrophy": 0.01196,
+            "red_queen_rate": 0.00601,
+            "ai_interaction_floor": 0.63746,
+            "base_engagement": 0.35916,
+            "lazy_contagion_rate": 0.43044
+          }
+        },
+        {
+          "tipping_point_epoch": 27,
+          "final_skill": 0.4203,
+          "final_quality": 0.4781,
+          "quality_skill_gap": 0.0578,
+          "scenario_id": 49,
+          "parameters": {
+            "alpha_atrophy": 0.00534,
+            "red_queen_rate": 0.00427,
+            "ai_interaction_floor": 0.26235,
+            "base_engagement": 0.12929,
+            "lazy_contagion_rate": 0.26002
+          }
+        },
+        {
+          "tipping_point_epoch": 25,
+          "final_skill": 0.5883,
+          "final_quality": 0.6454,
+          "quality_skill_gap": 0.0571,
+          "scenario_id": 50,
+          "parameters": {
+            "alpha_atrophy": 0.00796,
+            "red_queen_rate": 0.00807,
+            "ai_interaction_floor": 0.57709,
+            "base_engagement": 0.4996,
+            "lazy_contagion_rate": 0.0141
+          }
+        },
+        {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.3191,
+          "final_quality": 0.5454,
+          "quality_skill_gap": 0.2263,
+          "scenario_id": 51,
+          "parameters": {
+            "alpha_atrophy": 0.01038,
+            "red_queen_rate": 0.00928,
+            "ai_interaction_floor": 0.54229,
+            "base_engagement": 0.16585,
+            "lazy_contagion_rate": 0.3736
+          }
+        },
+        {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.2076,
+          "final_quality": 0.483,
+          "quality_skill_gap": 0.2755,
+          "scenario_id": 52,
+          "parameters": {
+            "alpha_atrophy": 0.01941,
+            "red_queen_rate": 0.00378,
+            "ai_interaction_floor": 0.68098,
+            "base_engagement": 0.39125,
+            "lazy_contagion_rate": 0.23325
+          }
+        },
+        {
+          "tipping_point_epoch": 27,
+          "final_skill": 0.5315,
+          "final_quality": 0.6215,
+          "quality_skill_gap": 0.09,
+          "scenario_id": 53,
+          "parameters": {
+            "alpha_atrophy": 0.00839,
+            "red_queen_rate": 0.00649,
+            "ai_interaction_floor": 0.58167,
+            "base_engagement": 0.43609,
+            "lazy_contagion_rate": 0.38886
+          }
+        },
+        {
+          "tipping_point_epoch": 17,
+          "final_skill": 0.3217,
+          "final_quality": 0.4019,
+          "quality_skill_gap": 0.0802,
+          "scenario_id": 54,
+          "parameters": {
+            "alpha_atrophy": 0.01551,
+            "red_queen_rate": 0.00717,
+            "ai_interaction_floor": 0.33975,
+            "base_engagement": 0.47103,
+            "lazy_contagion_rate": 0.26338
+          }
+        },
+        {
+          "tipping_point_epoch": 10,
+          "final_skill": 0.0964,
+          "final_quality": 0.463,
+          "quality_skill_gap": 0.3667,
+          "scenario_id": 55,
+          "parameters": {
+            "alpha_atrophy": 0.01587,
+            "red_queen_rate": 0.00966,
+            "ai_interaction_floor": 0.55801,
+            "base_engagement": 0.12112,
+            "lazy_contagion_rate": 0.1318
+          }
+        },
+        {
+          "tipping_point_epoch": 12,
+          "final_skill": 0.1881,
+          "final_quality": 0.5281,
+          "quality_skill_gap": 0.3399,
+          "scenario_id": 56,
+          "parameters": {
+            "alpha_atrophy": 0.01677,
+            "red_queen_rate": 0.00915,
+            "ai_interaction_floor": 0.67907,
+            "base_engagement": 0.23208,
+            "lazy_contagion_rate": 0.05519
+          }
+        },
+        {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.2626,
+          "final_quality": 0.5695,
+          "quality_skill_gap": 0.3069,
+          "scenario_id": 57,
+          "parameters": {
+            "alpha_atrophy": 0.01501,
+            "red_queen_rate": 0.00447,
+            "ai_interaction_floor": 0.70403,
+            "base_engagement": 0.26835,
+            "lazy_contagion_rate": 0.28527
+          }
+        },
+        {
+          "tipping_point_epoch": 21,
+          "final_skill": 0.3824,
+          "final_quality": 0.485,
+          "quality_skill_gap": 0.1026,
+          "scenario_id": 58,
+          "parameters": {
+            "alpha_atrophy": 0.0096,
+            "red_queen_rate": 0.00555,
+            "ai_interaction_floor": 0.38715,
+            "base_engagement": 0.29864,
+            "lazy_contagion_rate": 0.0973
+          }
+        },
+        {
+          "tipping_point_epoch": 12,
+          "final_skill": 0.1513,
+          "final_quality": 0.4685,
+          "quality_skill_gap": 0.3172,
+          "scenario_id": 59,
+          "parameters": {
+            "alpha_atrophy": 0.01885,
+            "red_queen_rate": 0.0084,
+            "ai_interaction_floor": 0.64177,
+            "base_engagement": 0.31216,
+            "lazy_contagion_rate": 0.24738
+          }
+        },
+        {
+          "tipping_point_epoch": 22,
+          "final_skill": 0.3479,
+          "final_quality": 0.5484,
+          "quality_skill_gap": 0.2005,
+          "scenario_id": 60,
+          "parameters": {
+            "alpha_atrophy": 0.01574,
+            "red_queen_rate": 0.00453,
+            "ai_interaction_floor": 0.69651,
+            "base_engagement": 0.4417,
+            "lazy_contagion_rate": 0.30196
+          }
+        },
+        {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.333,
+          "final_quality": 0.4964,
+          "quality_skill_gap": 0.1634,
+          "scenario_id": 61,
+          "parameters": {
+            "alpha_atrophy": 0.0143,
+            "red_queen_rate": 0.0063,
+            "ai_interaction_floor": 0.5498,
+            "base_engagement": 0.39957,
+            "lazy_contagion_rate": 0.23971
+          }
+        },
+        {
+          "tipping_point_epoch": 30,
+          "final_skill": 0.3312,
+          "final_quality": 0.4739,
+          "quality_skill_gap": 0.1428,
+          "scenario_id": 62,
+          "parameters": {
+            "alpha_atrophy": 0.0112,
+            "red_queen_rate": 0.00183,
+            "ai_interaction_floor": 0.43434,
+            "base_engagement": 0.29121,
+            "lazy_contagion_rate": 0.22999
+          }
+        },
+        {
+          "tipping_point_epoch": 40,
+          "final_skill": 0.4429,
+          "final_quality": 0.5923,
+          "quality_skill_gap": 0.1494,
+          "scenario_id": 63,
+          "parameters": {
+            "alpha_atrophy": 0.00682,
+            "red_queen_rate": 0.00213,
+            "ai_interaction_floor": 0.51196,
+            "base_engagement": 0.15301,
+            "lazy_contagion_rate": 0.05665
+          }
+        }
+      ],
+      "strict": [
+        {
+          "tipping_point_epoch": 40,
+          "final_skill": 0.7014,
+          "final_quality": 0.5874,
+          "quality_skill_gap": -0.114,
+          "scenario_id": 0,
+          "parameters": {
+            "alpha_atrophy": 0.01223,
+            "red_queen_rate": 0.00682,
+            "ai_interaction_floor": 0.29891,
+            "base_engagement": 0.80471,
+            "penalty": 0.10798
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.8346,
+          "final_quality": 0.7715,
+          "quality_skill_gap": -0.0631,
+          "scenario_id": 1,
+          "parameters": {
+            "alpha_atrophy": 0.00724,
+            "red_queen_rate": 0.00511,
+            "ai_interaction_floor": 0.30721,
+            "base_engagement": 0.89559,
+            "penalty": 0.0539
+          }
+        },
+        {
+          "tipping_point_epoch": 16,
+          "final_skill": 0.2944,
+          "final_quality": 0.2765,
+          "quality_skill_gap": -0.0178,
+          "scenario_id": 2,
+          "parameters": {
+            "alpha_atrophy": 0.01893,
+            "red_queen_rate": 0.00795,
+            "ai_interaction_floor": 0.57314,
+            "base_engagement": 0.55919,
+            "penalty": 0.14943
+          }
+        },
+        {
+          "tipping_point_epoch": 33,
+          "final_skill": 0.6147,
+          "final_quality": 0.4202,
+          "quality_skill_gap": -0.1944,
+          "scenario_id": 3,
+          "parameters": {
+            "alpha_atrophy": 0.00538,
+            "red_queen_rate": 0.00641,
+            "ai_interaction_floor": 0.34633,
+            "base_engagement": 0.54287,
+            "penalty": 0.204
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6567,
+          "final_quality": 0.508,
+          "quality_skill_gap": -0.1487,
+          "scenario_id": 4,
+          "parameters": {
+            "alpha_atrophy": 0.00606,
+            "red_queen_rate": 0.00035,
+            "ai_interaction_floor": 0.37079,
+            "base_engagement": 0.63041,
+            "penalty": 0.15232
+          }
+        },
+        {
+          "tipping_point_epoch": 42,
+          "final_skill": 0.7441,
+          "final_quality": 0.6342,
+          "quality_skill_gap": -0.1099,
+          "scenario_id": 5,
+          "parameters": {
+            "alpha_atrophy": 0.01322,
+            "red_queen_rate": 0.00734,
+            "ai_interaction_floor": 0.62748,
+            "base_engagement": 0.85028,
+            "penalty": 0.11329
+          }
+        },
+        {
+          "tipping_point_epoch": 54,
+          "final_skill": 0.7215,
+          "final_quality": 0.4918,
+          "quality_skill_gap": -0.2297,
+          "scenario_id": 6,
+          "parameters": {
+            "alpha_atrophy": 0.00547,
+            "red_queen_rate": 0.0058,
+            "ai_interaction_floor": 0.6564,
+            "base_engagement": 0.72251,
+            "penalty": 0.2425
+          }
+        },
+        {
+          "tipping_point_epoch": 40,
+          "final_skill": 0.5737,
+          "final_quality": 0.4343,
+          "quality_skill_gap": -0.1394,
+          "scenario_id": 7,
+          "parameters": {
+            "alpha_atrophy": 0.0174,
+            "red_queen_rate": 0.00455,
+            "ai_interaction_floor": 0.41343,
+            "base_engagement": 0.75246,
+            "penalty": 0.15459
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.7713,
+          "final_quality": 0.5827,
+          "quality_skill_gap": -0.1886,
+          "scenario_id": 8,
+          "parameters": {
+            "alpha_atrophy": 0.00621,
+            "red_queen_rate": 0.00345,
+            "ai_interaction_floor": 0.28735,
+            "base_engagement": 0.81176,
+            "penalty": 0.17695
+          }
+        },
+        {
+          "tipping_point_epoch": 19,
+          "final_skill": 0.4888,
+          "final_quality": 0.4647,
+          "quality_skill_gap": -0.0241,
+          "scenario_id": 9,
+          "parameters": {
+            "alpha_atrophy": 0.01568,
+            "red_queen_rate": 0.00901,
+            "ai_interaction_floor": 0.38056,
+            "base_engagement": 0.64503,
+            "penalty": 0.05701
+          }
+        },
+        {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.4481,
+          "final_quality": 0.3662,
+          "quality_skill_gap": -0.082,
+          "scenario_id": 10,
+          "parameters": {
+            "alpha_atrophy": 0.01123,
+            "red_queen_rate": 0.00871,
+            "ai_interaction_floor": 0.5594,
+            "base_engagement": 0.52476,
+            "penalty": 0.17436
+          }
+        },
+        {
+          "tipping_point_epoch": 24,
+          "final_skill": 0.6429,
+          "final_quality": 0.5533,
+          "quality_skill_gap": -0.0896,
+          "scenario_id": 11,
+          "parameters": {
+            "alpha_atrophy": 0.00645,
+            "red_queen_rate": 0.00926,
+            "ai_interaction_floor": 0.68522,
+            "base_engagement": 0.60981,
+            "penalty": 0.1327
+          }
+        },
+        {
+          "tipping_point_epoch": 25,
+          "final_skill": 0.4324,
+          "final_quality": 0.3397,
+          "quality_skill_gap": -0.0927,
+          "scenario_id": 12,
+          "parameters": {
+            "alpha_atrophy": 0.01185,
+            "red_queen_rate": 0.00525,
+            "ai_interaction_floor": 0.69779,
+            "base_engagement": 0.52612,
+            "penalty": 0.22073
+          }
+        },
+        {
+          "tipping_point_epoch": 41,
+          "final_skill": 0.571,
+          "final_quality": 0.4268,
+          "quality_skill_gap": -0.1442,
+          "scenario_id": 13,
+          "parameters": {
+            "alpha_atrophy": 0.01315,
+            "red_queen_rate": 0.00444,
+            "ai_interaction_floor": 0.59999,
+            "base_engagement": 0.69574,
+            "penalty": 0.18504
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.708,
+          "final_quality": 0.4864,
+          "quality_skill_gap": -0.2216,
+          "scenario_id": 14,
+          "parameters": {
+            "alpha_atrophy": 0.00893,
+            "red_queen_rate": 0.00078,
+            "ai_interaction_floor": 0.45501,
+            "base_engagement": 0.77303,
+            "penalty": 0.2231
+          }
+        },
+        {
+          "tipping_point_epoch": 27,
+          "final_skill": 0.5227,
+          "final_quality": 0.4117,
+          "quality_skill_gap": -0.111,
+          "scenario_id": 15,
+          "parameters": {
+            "alpha_atrophy": 0.01289,
+            "red_queen_rate": 0.00628,
+            "ai_interaction_floor": 0.50908,
+            "base_engagement": 0.63812,
+            "penalty": 0.15673
+          }
+        },
+        {
+          "tipping_point_epoch": 20,
+          "final_skill": 0.5645,
+          "final_quality": 0.5146,
+          "quality_skill_gap": -0.0498,
+          "scenario_id": 16,
+          "parameters": {
+            "alpha_atrophy": 0.00933,
+            "red_queen_rate": 0.00956,
+            "ai_interaction_floor": 0.53012,
+            "base_engagement": 0.58448,
+            "penalty": 0.09673
+          }
+        },
+        {
+          "tipping_point_epoch": 24,
+          "final_skill": 0.4089,
+          "final_quality": 0.2865,
+          "quality_skill_gap": -0.1224,
+          "scenario_id": 17,
+          "parameters": {
+            "alpha_atrophy": 0.01661,
+            "red_queen_rate": 0.00537,
+            "ai_interaction_floor": 0.47336,
+            "base_engagement": 0.61315,
+            "penalty": 0.19039
+          }
+        },
+        {
+          "tipping_point_epoch": 26,
+          "final_skill": 0.5468,
+          "final_quality": 0.3919,
+          "quality_skill_gap": -0.1549,
+          "scenario_id": 18,
+          "parameters": {
+            "alpha_atrophy": 0.0152,
+            "red_queen_rate": 0.0071,
+            "ai_interaction_floor": 0.27681,
+            "base_engagement": 0.7038,
+            "penalty": 0.16225
+          }
+        },
+        {
+          "tipping_point_epoch": 21,
+          "final_skill": 0.5739,
+          "final_quality": 0.4262,
+          "quality_skill_gap": -0.1477,
+          "scenario_id": 19,
+          "parameters": {
+            "alpha_atrophy": 0.01013,
+            "red_queen_rate": 0.00911,
+            "ai_interaction_floor": 0.35883,
+            "base_engagement": 0.63624,
+            "penalty": 0.16357
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6689,
+          "final_quality": 0.608,
+          "quality_skill_gap": -0.0609,
+          "scenario_id": 20,
+          "parameters": {
+            "alpha_atrophy": 0.00815,
+            "red_queen_rate": 0.00102,
+            "ai_interaction_floor": 0.66536,
+            "base_engagement": 0.68997,
+            "penalty": 0.08791
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.7574,
+          "final_quality": 0.6218,
+          "quality_skill_gap": -0.1357,
+          "scenario_id": 21,
+          "parameters": {
+            "alpha_atrophy": 0.00575,
+            "red_queen_rate": 0.00224,
+            "ai_interaction_floor": 0.33346,
+            "base_engagement": 0.77712,
+            "penalty": 0.126
+          }
+        },
+        {
+          "tipping_point_epoch": 28,
+          "final_skill": 0.5277,
+          "final_quality": 0.5392,
+          "quality_skill_gap": 0.0115,
+          "scenario_id": 22,
+          "parameters": {
+            "alpha_atrophy": 0.01097,
+            "red_queen_rate": 0.0061,
+            "ai_interaction_floor": 0.67754,
+            "base_engagement": 0.57424,
+            "penalty": 0.07118
+          }
+        },
+        {
+          "tipping_point_epoch": 24,
+          "final_skill": 0.2776,
+          "final_quality": 0.2513,
+          "quality_skill_gap": -0.0262,
+          "scenario_id": 23,
+          "parameters": {
+            "alpha_atrophy": 0.01817,
+            "red_queen_rate": 0.00301,
+            "ai_interaction_floor": 0.57019,
+            "base_engagement": 0.5325,
+            "penalty": 0.16982
+          }
+        },
+        {
+          "tipping_point_epoch": 40,
+          "final_skill": 0.5384,
+          "final_quality": 0.5448,
+          "quality_skill_gap": 0.0064,
+          "scenario_id": 24,
+          "parameters": {
+            "alpha_atrophy": 0.01045,
+            "red_queen_rate": 0.00403,
+            "ai_interaction_floor": 0.54624,
+            "base_engagement": 0.56708,
+            "penalty": 0.05166
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6374,
+          "final_quality": 0.5078,
+          "quality_skill_gap": -0.1296,
+          "scenario_id": 25,
+          "parameters": {
+            "alpha_atrophy": 0.00785,
+            "red_queen_rate": 0.00076,
+            "ai_interaction_floor": 0.31439,
+            "base_engagement": 0.65639,
+            "penalty": 0.13003
+          }
+        },
+        {
+          "tipping_point_epoch": 41,
+          "final_skill": 0.8019,
+          "final_quality": 0.5594,
+          "quality_skill_gap": -0.2425,
+          "scenario_id": 26,
+          "parameters": {
+            "alpha_atrophy": 0.00837,
+            "red_queen_rate": 0.00842,
+            "ai_interaction_floor": 0.39952,
+            "base_engagement": 0.88194,
+            "penalty": 0.23582
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.7463,
+          "final_quality": 0.5565,
+          "quality_skill_gap": -0.1898,
+          "scenario_id": 27,
+          "parameters": {
+            "alpha_atrophy": 0.01434,
+            "red_queen_rate": 0.00255,
+            "ai_interaction_floor": 0.73979,
+            "base_engagement": 0.8685,
+            "penalty": 0.19575
+          }
+        },
+        {
+          "tipping_point_epoch": 25,
+          "final_skill": 0.5613,
+          "final_quality": 0.3483,
+          "quality_skill_gap": -0.213,
+          "scenario_id": 28,
+          "parameters": {
+            "alpha_atrophy": 0.0161,
+            "red_queen_rate": 0.00746,
+            "ai_interaction_floor": 0.42993,
+            "base_engagement": 0.73085,
+            "penalty": 0.23352
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6594,
+          "final_quality": 0.4904,
+          "quality_skill_gap": -0.1691,
+          "scenario_id": 29,
+          "parameters": {
+            "alpha_atrophy": 0.01881,
+            "red_queen_rate": 0.00275,
+            "ai_interaction_floor": 0.26164,
+            "base_engagement": 0.82616,
+            "penalty": 0.16578
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.5306,
+          "final_quality": 0.3493,
+          "quality_skill_gap": -0.1813,
+          "scenario_id": 30,
+          "parameters": {
+            "alpha_atrophy": 0.0138,
+            "red_queen_rate": 0.00013,
+            "ai_interaction_floor": 0.42335,
+            "base_engagement": 0.66862,
+            "penalty": 0.21081
+          }
+        },
+        {
+          "tipping_point_epoch": 21,
+          "final_skill": 0.3859,
+          "final_quality": 0.3747,
+          "quality_skill_gap": -0.0111,
+          "scenario_id": 31,
+          "parameters": {
+            "alpha_atrophy": 0.01757,
+            "red_queen_rate": 0.00599,
+            "ai_interaction_floor": 0.60626,
+            "base_engagement": 0.59832,
+            "penalty": 0.11572
+          }
+        },
+        {
+          "tipping_point_epoch": 26,
+          "final_skill": 0.5916,
+          "final_quality": 0.3934,
+          "quality_skill_gap": -0.1982,
+          "scenario_id": 32,
+          "parameters": {
+            "alpha_atrophy": 0.00781,
+            "red_queen_rate": 0.0077,
+            "ai_interaction_floor": 0.62042,
+            "base_engagement": 0.59214,
+            "penalty": 0.24984
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.563,
+          "final_quality": 0.4876,
+          "quality_skill_gap": -0.0754,
+          "scenario_id": 33,
+          "parameters": {
+            "alpha_atrophy": 0.01913,
+            "red_queen_rate": 0.0012,
+            "ai_interaction_floor": 0.61107,
+            "base_engagement": 0.75707,
+            "penalty": 0.11002
+          }
+        },
+        {
+          "tipping_point_epoch": 30,
+          "final_skill": 0.7143,
+          "final_quality": 0.5235,
+          "quality_skill_gap": -0.1908,
+          "scenario_id": 34,
+          "parameters": {
+            "alpha_atrophy": 0.01553,
+            "red_queen_rate": 0.00884,
+            "ai_interaction_floor": 0.4832,
+            "base_engagement": 0.84537,
+            "penalty": 0.19199
+          }
+        },
+        {
+          "tipping_point_epoch": 36,
+          "final_skill": 0.6722,
+          "final_quality": 0.4858,
+          "quality_skill_gap": -0.1864,
+          "scenario_id": 35,
+          "parameters": {
+            "alpha_atrophy": 0.00711,
+            "red_queen_rate": 0.00693,
+            "ai_interaction_floor": 0.48441,
+            "base_engagement": 0.6868,
+            "penalty": 0.19688
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6817,
+          "final_quality": 0.4503,
+          "quality_skill_gap": -0.2313,
+          "scenario_id": 36,
+          "parameters": {
+            "alpha_atrophy": 0.01242,
+            "red_queen_rate": 0.0017,
+            "ai_interaction_floor": 0.52166,
+            "base_engagement": 0.78902,
+            "penalty": 0.23956
+          }
+        },
+        {
+          "tipping_point_epoch": 43,
+          "final_skill": 0.7732,
+          "final_quality": 0.5437,
+          "quality_skill_gap": -0.2294,
+          "scenario_id": 37,
+          "parameters": {
+            "alpha_atrophy": 0.01352,
+            "red_queen_rate": 0.00758,
+            "ai_interaction_floor": 0.53324,
+            "base_engagement": 0.88908,
+            "penalty": 0.22788
+          }
+        },
+        {
+          "tipping_point_epoch": 50,
+          "final_skill": 0.5315,
+          "final_quality": 0.4601,
+          "quality_skill_gap": -0.0713,
+          "scenario_id": 38,
+          "parameters": {
+            "alpha_atrophy": 0.01449,
+            "red_queen_rate": 0.00287,
+            "ai_interaction_floor": 0.43836,
+            "base_engagement": 0.67111,
+            "penalty": 0.10298
+          }
+        },
+        {
+          "tipping_point_epoch": 47,
+          "final_skill": 0.4603,
+          "final_quality": 0.2959,
+          "quality_skill_gap": -0.1644,
+          "scenario_id": 39,
+          "parameters": {
+            "alpha_atrophy": 0.01017,
+            "red_queen_rate": 0.00191,
+            "ai_interaction_floor": 0.33772,
+            "base_engagement": 0.51052,
+            "penalty": 0.20644
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.707,
+          "final_quality": 0.5866,
+          "quality_skill_gap": -0.1204,
+          "scenario_id": 40,
+          "parameters": {
+            "alpha_atrophy": 0.01837,
+            "red_queen_rate": 0.00057,
+            "ai_interaction_floor": 0.38399,
+            "base_engagement": 0.85926,
+            "penalty": 0.11912
+          }
+        },
+        {
+          "tipping_point_epoch": 55,
+          "final_skill": 0.4687,
+          "final_quality": 0.3986,
+          "quality_skill_gap": -0.0701,
+          "scenario_id": 41,
+          "parameters": {
+            "alpha_atrophy": 0.01144,
+            "red_queen_rate": 0.00147,
+            "ai_interaction_floor": 0.71558,
+            "base_engagement": 0.54945,
+            "penalty": 0.18373
+          }
+        },
+        {
+          "tipping_point_epoch": 25,
+          "final_skill": 0.5111,
+          "final_quality": 0.3141,
+          "quality_skill_gap": -0.197,
+          "scenario_id": 42,
+          "parameters": {
+            "alpha_atrophy": 0.01399,
+            "red_queen_rate": 0.00663,
+            "ai_interaction_floor": 0.29563,
+            "base_engagement": 0.65465,
+            "penalty": 0.2129
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.7167,
+          "final_quality": 0.5031,
+          "quality_skill_gap": -0.2137,
+          "scenario_id": 43,
+          "parameters": {
+            "alpha_atrophy": 0.01158,
+            "red_queen_rate": 0.00326,
+            "ai_interaction_floor": 0.49885,
+            "base_engagement": 0.82001,
+            "penalty": 0.2161
+          }
+        },
+        {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.479,
+          "final_quality": 0.312,
+          "quality_skill_gap": -0.167,
+          "scenario_id": 44,
+          "parameters": {
+            "alpha_atrophy": 0.01983,
+            "red_queen_rate": 0.00943,
+            "ai_interaction_floor": 0.26823,
+            "base_engagement": 0.71506,
+            "penalty": 0.18047
+          }
+        },
+        {
+          "tipping_point_epoch": 22,
+          "final_skill": 0.6217,
+          "final_quality": 0.5826,
+          "quality_skill_gap": -0.0391,
+          "scenario_id": 45,
+          "parameters": {
+            "alpha_atrophy": 0.01479,
+            "red_queen_rate": 0.00989,
+            "ai_interaction_floor": 0.55043,
+            "base_engagement": 0.74611,
+            "penalty": 0.05988
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.5721,
+          "final_quality": 0.5359,
+          "quality_skill_gap": -0.0361,
+          "scenario_id": 46,
+          "parameters": {
+            "alpha_atrophy": 0.00684,
+            "red_queen_rate": 0.00216,
+            "ai_interaction_floor": 0.41413,
+            "base_engagement": 0.50247,
+            "penalty": 0.0684
+          }
+        },
+        {
+          "tipping_point_epoch": 46,
+          "final_skill": 0.6784,
+          "final_quality": 0.5698,
+          "quality_skill_gap": -0.1085,
+          "scenario_id": 47,
+          "parameters": {
+            "alpha_atrophy": 0.00509,
+            "red_queen_rate": 0.0057,
+            "ai_interaction_floor": 0.63342,
+            "base_engagement": 0.6244,
+            "penalty": 0.13563
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6779,
+          "final_quality": 0.6021,
+          "quality_skill_gap": -0.0758,
+          "scenario_id": 48,
+          "parameters": {
+            "alpha_atrophy": 0.01944,
+            "red_queen_rate": 0.00365,
+            "ai_interaction_floor": 0.71973,
+            "base_engagement": 0.84043,
+            "penalty": 0.09102
+          }
+        },
+        {
+          "tipping_point_epoch": 34,
+          "final_skill": 0.7227,
+          "final_quality": 0.474,
+          "quality_skill_gap": -0.2487,
+          "scenario_id": 49,
+          "parameters": {
+            "alpha_atrophy": 0.00909,
+            "red_queen_rate": 0.00818,
+            "ai_interaction_floor": 0.391,
+            "base_engagement": 0.78722,
+            "penalty": 0.24523
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.8003,
+          "final_quality": 0.7119,
+          "quality_skill_gap": -0.0885,
+          "scenario_id": 50,
+          "parameters": {
+            "alpha_atrophy": 0.00949,
+            "red_queen_rate": 0.00016,
+            "ai_interaction_floor": 0.45016,
+            "base_engagement": 0.8781,
+            "penalty": 0.08293
+          }
+        },
+        {
+          "tipping_point_epoch": 29,
+          "final_skill": 0.3739,
+          "final_quality": 0.3009,
+          "quality_skill_gap": -0.073,
+          "scenario_id": 51,
+          "parameters": {
+            "alpha_atrophy": 0.01797,
+            "red_queen_rate": 0.00331,
+            "ai_interaction_floor": 0.25397,
+            "base_engagement": 0.60489,
+            "penalty": 0.10364
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.7317,
+          "final_quality": 0.5039,
+          "quality_skill_gap": -0.2278,
+          "scenario_id": 52,
+          "parameters": {
+            "alpha_atrophy": 0.00973,
+            "red_queen_rate": 0.005,
+            "ai_interaction_floor": 0.50484,
+            "base_engagement": 0.81424,
+            "penalty": 0.22912
+          }
+        },
+        {
+          "tipping_point_epoch": 23,
+          "final_skill": 0.312,
+          "final_quality": 0.3272,
+          "quality_skill_gap": 0.0152,
+          "scenario_id": 53,
+          "parameters": {
+            "alpha_atrophy": 0.01953,
+            "red_queen_rate": 0.00386,
+            "ai_interaction_floor": 0.72769,
+            "base_engagement": 0.57737,
+            "penalty": 0.14684
+          }
+        },
+        {
+          "tipping_point_epoch": 51,
+          "final_skill": 0.6462,
+          "final_quality": 0.5246,
+          "quality_skill_gap": -0.1216,
+          "scenario_id": 54,
+          "parameters": {
+            "alpha_atrophy": 0.01598,
+            "red_queen_rate": 0.00478,
+            "ai_interaction_floor": 0.64086,
+            "base_engagement": 0.79437,
+            "penalty": 0.14121
+          }
+        },
+        {
+          "tipping_point_epoch": 42,
+          "final_skill": 0.5673,
+          "final_quality": 0.4224,
+          "quality_skill_gap": -0.1448,
+          "scenario_id": 55,
+          "parameters": {
+            "alpha_atrophy": 0.00754,
+            "red_queen_rate": 0.00427,
+            "ai_interaction_floor": 0.58448,
+            "base_engagement": 0.55133,
+            "penalty": 0.2031
+          }
+        },
+        {
+          "tipping_point_epoch": 22,
+          "final_skill": 0.5236,
+          "final_quality": 0.4204,
+          "quality_skill_gap": -0.1032,
+          "scenario_id": 56,
+          "parameters": {
+            "alpha_atrophy": 0.01504,
+            "red_queen_rate": 0.00801,
+            "ai_interaction_floor": 0.35975,
+            "base_engagement": 0.6795,
+            "penalty": 0.12474
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6932,
+          "final_quality": 0.628,
+          "quality_skill_gap": -0.0652,
+          "scenario_id": 57,
+          "parameters": {
+            "alpha_atrophy": 0.01705,
+            "red_queen_rate": 0.00182,
+            "ai_interaction_floor": 0.65114,
+            "base_engagement": 0.83451,
+            "penalty": 0.07653
+          }
+        },
+        {
+          "tipping_point_epoch": 22,
+          "final_skill": 0.6391,
+          "final_quality": 0.567,
+          "quality_skill_gap": -0.0721,
+          "scenario_id": 58,
+          "parameters": {
+            "alpha_atrophy": 0.01069,
+            "red_queen_rate": 0.00982,
+            "ai_interaction_floor": 0.32406,
+            "base_engagement": 0.70988,
+            "penalty": 0.07349
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.7683,
+          "final_quality": 0.6334,
+          "quality_skill_gap": -0.1349,
+          "scenario_id": 59,
+          "parameters": {
+            "alpha_atrophy": 0.01265,
+            "red_queen_rate": 0.00248,
+            "ai_interaction_floor": 0.74354,
+            "base_engagement": 0.87283,
+            "penalty": 0.13916
+          }
+        },
+        {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6161,
+          "final_quality": 0.5598,
+          "quality_skill_gap": -0.0563,
+          "scenario_id": 60,
+          "parameters": {
+            "alpha_atrophy": 0.01637,
+            "red_queen_rate": 0.00125,
+            "ai_interaction_floor": 0.58842,
+            "base_engagement": 0.76352,
+            "penalty": 0.07978
+          }
+        },
+        {
+          "tipping_point_epoch": 39,
+          "final_skill": 0.5424,
+          "final_quality": 0.5521,
+          "quality_skill_gap": 0.0097,
+          "scenario_id": 61,
+          "parameters": {
+            "alpha_atrophy": 0.00853,
+            "red_queen_rate": 0.00422,
+            "ai_interaction_floor": 0.71008,
+            "base_engagement": 0.51343,
+            "penalty": 0.08573
+          }
+        },
+        {
+          "tipping_point_epoch": 34,
+          "final_skill": 0.5749,
+          "final_quality": 0.5189,
+          "quality_skill_gap": -0.056,
+          "scenario_id": 62,
+          "parameters": {
+            "alpha_atrophy": 0.01674,
+            "red_queen_rate": 0.00561,
+            "ai_interaction_floor": 0.69327,
+            "base_engagement": 0.73873,
+            "penalty": 0.09838
+          }
+        },
+        {
+          "tipping_point_epoch": 22,
+          "final_skill": 0.5602,
+          "final_quality": 0.5184,
+          "quality_skill_gap": -0.0419,
+          "scenario_id": 63,
+          "parameters": {
+            "alpha_atrophy": 0.0177,
+            "red_queen_rate": 0.00852,
+            "ai_interaction_floor": 0.46538,
+            "base_engagement": 0.73417,
+            "penalty": 0.06544
+          }
+        }
+      ]
+    },
+    "summary": {
+      "loose": {
+        "n_scenarios": 64,
+        "crossing_share": 0.9062,
+        "no_crossing_count": 6,
+        "final_skill_p10_p50_p90": [
+          0.0965,
+          0.3292,
+          0.5173
+        ],
+        "gap_p10_p50_p90": [
+          0.0593,
+          0.1527,
+          0.3243
+        ],
+        "crossing_epoch_p10_p50_p90": [
+          12.0,
+          18.0,
+          32.9
+        ]
+      },
+      "strict": {
+        "n_scenarios": 64,
+        "crossing_share": 0.6719,
+        "no_crossing_count": 21,
+        "final_skill_p10_p50_p90": [
+          0.4371,
+          0.6032,
+          0.7541
+        ],
+        "gap_p10_p50_p90": [
+          -0.2192,
+          -0.1172,
+          -0.0247
+        ],
+        "crossing_epoch_p10_p50_p90": [
+          20.2,
+          28.0,
+          46.8
+        ]
+      }
+    }
+  },
+  "paired_lhs_common_conditions": {
+    "n_samples": 64,
+    "n_monte_carlo_per_scenario": 30,
+    "ranges": {
+      "alpha_atrophy": [
+        0.005,
+        0.02
+      ],
+      "red_queen_rate": [
+        0.0,
+        0.01
+      ],
+      "ai_interaction_floor": [
+        0.25,
+        0.75
+      ],
+      "lazy_contagion_rate": [
+        0.0,
+        0.45
+      ],
+      "governance": "canonical HITL and HOTL settings held fixed"
+    },
+    "samples": [
+      {
+        "scenario_id": 0,
+        "parameters": {
+          "alpha_atrophy": 0.0056,
+          "red_queen_rate": 0.0017,
+          "ai_interaction_floor": 0.54151,
+          "lazy_contagion_rate": 0.14772
+        },
+        "loose": {
+          "tipping_point_epoch": 53,
+          "final_skill": 0.4792,
+          "final_quality": 0.6311,
+          "quality_skill_gap": 0.1519
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.7136,
+          "final_quality": 0.5715,
+          "quality_skill_gap": -0.1421
+        }
+      },
+      {
+        "scenario_id": 1,
+        "parameters": {
+          "alpha_atrophy": 0.01916,
+          "red_queen_rate": 0.00806,
+          "ai_interaction_floor": 0.63909,
+          "lazy_contagion_rate": 0.10083
+        },
+        "loose": {
+          "tipping_point_epoch": 10,
+          "final_skill": 0.0151,
+          "final_quality": 0.4967,
+          "quality_skill_gap": 0.4816
+        },
+        "strict": {
+          "tipping_point_epoch": 21,
+          "final_skill": 0.4793,
+          "final_quality": 0.392,
+          "quality_skill_gap": -0.0873
+        }
+      },
+      {
+        "scenario_id": 2,
+        "parameters": {
+          "alpha_atrophy": 0.01218,
+          "red_queen_rate": 0.00249,
+          "ai_interaction_floor": 0.31424,
+          "lazy_contagion_rate": 0.44431
+        },
+        "loose": {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.1211,
+          "final_quality": 0.3187,
+          "quality_skill_gap": 0.1976
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.5949,
+          "final_quality": 0.4509,
+          "quality_skill_gap": -0.144
+        }
+      },
+      {
+        "scenario_id": 3,
+        "parameters": {
+          "alpha_atrophy": 0.00798,
+          "red_queen_rate": 0.00933,
+          "ai_interaction_floor": 0.3046,
+          "lazy_contagion_rate": 0.28
+        },
+        "loose": {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.3017,
+          "final_quality": 0.4237,
+          "quality_skill_gap": 0.1221
+        },
+        "strict": {
+          "tipping_point_epoch": 25,
+          "final_skill": 0.6678,
+          "final_quality": 0.5132,
+          "quality_skill_gap": -0.1547
+        }
+      },
+      {
+        "scenario_id": 4,
+        "parameters": {
+          "alpha_atrophy": 0.01287,
+          "red_queen_rate": 0.00135,
+          "ai_interaction_floor": 0.68158,
+          "lazy_contagion_rate": 0.26487
+        },
+        "loose": {
+          "tipping_point_epoch": 24,
+          "final_skill": 0.2483,
+          "final_quality": 0.6106,
+          "quality_skill_gap": 0.3624
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.592,
+          "final_quality": 0.4856,
+          "quality_skill_gap": -0.1064
+        }
+      },
+      {
+        "scenario_id": 5,
+        "parameters": {
+          "alpha_atrophy": 0.0103,
+          "red_queen_rate": 0.00443,
+          "ai_interaction_floor": 0.62319,
+          "lazy_contagion_rate": 0.09316
+        },
+        "loose": {
+          "tipping_point_epoch": 20,
+          "final_skill": 0.3258,
+          "final_quality": 0.6035,
+          "quality_skill_gap": 0.2777
+        },
+        "strict": {
+          "tipping_point_epoch": 53,
+          "final_skill": 0.6343,
+          "final_quality": 0.5134,
+          "quality_skill_gap": -0.1209
+        }
+      },
+      {
+        "scenario_id": 6,
+        "parameters": {
+          "alpha_atrophy": 0.01612,
+          "red_queen_rate": 0.00305,
+          "ai_interaction_floor": 0.45654,
+          "lazy_contagion_rate": 0.38548
+        },
+        "loose": {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.0309,
+          "final_quality": 0.3708,
+          "quality_skill_gap": 0.3399
+        },
+        "strict": {
+          "tipping_point_epoch": 48,
+          "final_skill": 0.5313,
+          "final_quality": 0.4115,
+          "quality_skill_gap": -0.1198
+        }
+      },
+      {
+        "scenario_id": 7,
+        "parameters": {
+          "alpha_atrophy": 0.01091,
+          "red_queen_rate": 0.00638,
+          "ai_interaction_floor": 0.29469,
+          "lazy_contagion_rate": 0.14702
+        },
+        "loose": {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.1718,
+          "final_quality": 0.3356,
+          "quality_skill_gap": 0.1638
+        },
+        "strict": {
+          "tipping_point_epoch": 33,
+          "final_skill": 0.6167,
+          "final_quality": 0.4679,
+          "quality_skill_gap": -0.1488
+        }
+      },
+      {
+        "scenario_id": 8,
+        "parameters": {
+          "alpha_atrophy": 0.01968,
+          "red_queen_rate": 0.00956,
+          "ai_interaction_floor": 0.36674,
+          "lazy_contagion_rate": 0.23979
+        },
+        "loose": {
+          "tipping_point_epoch": 8,
+          "final_skill": 0.0,
+          "final_quality": 0.2833,
+          "quality_skill_gap": 0.2833
+        },
+        "strict": {
+          "tipping_point_epoch": 17,
+          "final_skill": 0.4615,
+          "final_quality": 0.3405,
+          "quality_skill_gap": -0.121
+        }
+      },
+      {
+        "scenario_id": 9,
+        "parameters": {
+          "alpha_atrophy": 0.00963,
+          "red_queen_rate": 0.00792,
+          "ai_interaction_floor": 0.48373,
+          "lazy_contagion_rate": 0.25074
+        },
+        "loose": {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.2961,
+          "final_quality": 0.5174,
+          "quality_skill_gap": 0.2213
+        },
+        "strict": {
+          "tipping_point_epoch": 28,
+          "final_skill": 0.6386,
+          "final_quality": 0.5035,
+          "quality_skill_gap": -0.1351
+        }
+      },
+      {
+        "scenario_id": 10,
+        "parameters": {
+          "alpha_atrophy": 0.01598,
+          "red_queen_rate": 0.00562,
+          "ai_interaction_floor": 0.38937,
+          "lazy_contagion_rate": 0.04143
+        },
+        "loose": {
+          "tipping_point_epoch": 12,
+          "final_skill": 0.0189,
+          "final_quality": 0.3093,
+          "quality_skill_gap": 0.2905
+        },
+        "strict": {
+          "tipping_point_epoch": 30,
+          "final_skill": 0.5306,
+          "final_quality": 0.4041,
+          "quality_skill_gap": -0.1265
+        }
+      },
+      {
+        "scenario_id": 11,
+        "parameters": {
+          "alpha_atrophy": 0.01791,
+          "red_queen_rate": 0.00671,
+          "ai_interaction_floor": 0.69422,
+          "lazy_contagion_rate": 0.08924
+        },
+        "loose": {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.0699,
+          "final_quality": 0.5567,
+          "quality_skill_gap": 0.4868
+        },
+        "strict": {
+          "tipping_point_epoch": 24,
+          "final_skill": 0.5005,
+          "final_quality": 0.4171,
+          "quality_skill_gap": -0.0835
+        }
+      },
+      {
+        "scenario_id": 12,
+        "parameters": {
+          "alpha_atrophy": 0.0155,
+          "red_queen_rate": 0.00261,
+          "ai_interaction_floor": 0.28673,
+          "lazy_contagion_rate": 0.12803
+        },
+        "loose": {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.0079,
+          "final_quality": 0.2256,
+          "quality_skill_gap": 0.2177
+        },
+        "strict": {
+          "tipping_point_epoch": 56,
+          "final_skill": 0.5401,
+          "final_quality": 0.3997,
+          "quality_skill_gap": -0.1404
+        }
+      },
+      {
+        "scenario_id": 13,
+        "parameters": {
+          "alpha_atrophy": 0.01695,
+          "red_queen_rate": 0.00464,
+          "ai_interaction_floor": 0.25439,
+          "lazy_contagion_rate": 0.27066
+        },
+        "loose": {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.0002,
+          "final_quality": 0.1962,
+          "quality_skill_gap": 0.196
+        },
+        "strict": {
+          "tipping_point_epoch": 33,
+          "final_skill": 0.5091,
+          "final_quality": 0.3675,
+          "quality_skill_gap": -0.1416
+        }
+      },
+      {
+        "scenario_id": 14,
+        "parameters": {
+          "alpha_atrophy": 0.01578,
+          "red_queen_rate": 0.0034,
+          "ai_interaction_floor": 0.51065,
+          "lazy_contagion_rate": 0.40297
+        },
+        "loose": {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.0615,
+          "final_quality": 0.4269,
+          "quality_skill_gap": 0.3654
+        },
+        "strict": {
+          "tipping_point_epoch": 45,
+          "final_skill": 0.5366,
+          "final_quality": 0.4228,
+          "quality_skill_gap": -0.1138
+        }
+      },
+      {
+        "scenario_id": 15,
+        "parameters": {
+          "alpha_atrophy": 0.0097,
+          "red_queen_rate": 0.0072,
+          "ai_interaction_floor": 0.74907,
+          "lazy_contagion_rate": 0.34601
+        },
+        "loose": {
+          "tipping_point_epoch": 17,
+          "final_skill": 0.3849,
+          "final_quality": 0.6905,
+          "quality_skill_gap": 0.3056
+        },
+        "strict": {
+          "tipping_point_epoch": 32,
+          "final_skill": 0.6441,
+          "final_quality": 0.5334,
+          "quality_skill_gap": -0.1107
+        }
+      },
+      {
+        "scenario_id": 16,
+        "parameters": {
+          "alpha_atrophy": 0.00859,
+          "red_queen_rate": 0.00521,
+          "ai_interaction_floor": 0.59602,
+          "lazy_contagion_rate": 0.11917
+        },
+        "loose": {
+          "tipping_point_epoch": 21,
+          "final_skill": 0.3796,
+          "final_quality": 0.6125,
+          "quality_skill_gap": 0.2328
+        },
+        "strict": {
+          "tipping_point_epoch": 49,
+          "final_skill": 0.6614,
+          "final_quality": 0.5336,
+          "quality_skill_gap": -0.1278
+        }
+      },
+      {
+        "scenario_id": 17,
+        "parameters": {
+          "alpha_atrophy": 0.0175,
+          "red_queen_rate": 0.00294,
+          "ai_interaction_floor": 0.7072,
+          "lazy_contagion_rate": 0.38825
+        },
+        "loose": {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.0824,
+          "final_quality": 0.5797,
+          "quality_skill_gap": 0.4973
+        },
+        "strict": {
+          "tipping_point_epoch": 45,
+          "final_skill": 0.5088,
+          "final_quality": 0.4247,
+          "quality_skill_gap": -0.0841
+        }
+      },
+      {
+        "scenario_id": 18,
+        "parameters": {
+          "alpha_atrophy": 0.01464,
+          "red_queen_rate": 0.00369,
+          "ai_interaction_floor": 0.37306,
+          "lazy_contagion_rate": 0.23773
+        },
+        "loose": {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.0508,
+          "final_quality": 0.3161,
+          "quality_skill_gap": 0.2654
+        },
+        "strict": {
+          "tipping_point_epoch": 46,
+          "final_skill": 0.5569,
+          "final_quality": 0.4234,
+          "quality_skill_gap": -0.1335
+        }
+      },
+      {
+        "scenario_id": 19,
+        "parameters": {
+          "alpha_atrophy": 0.01698,
+          "red_queen_rate": 0.00018,
+          "ai_interaction_floor": 0.55465,
+          "lazy_contagion_rate": 0.33878
+        },
+        "loose": {
+          "tipping_point_epoch": 17,
+          "final_skill": 0.0384,
+          "final_quality": 0.4493,
+          "quality_skill_gap": 0.4109
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.5153,
+          "final_quality": 0.4115,
+          "quality_skill_gap": -0.1038
+        }
+      },
+      {
+        "scenario_id": 20,
+        "parameters": {
+          "alpha_atrophy": 0.0114,
+          "red_queen_rate": 0.00228,
+          "ai_interaction_floor": 0.32944,
+          "lazy_contagion_rate": 0.33614
+        },
+        "loose": {
+          "tipping_point_epoch": 20,
+          "final_skill": 0.1674,
+          "final_quality": 0.3555,
+          "quality_skill_gap": 0.1881
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6158,
+          "final_quality": 0.4697,
+          "quality_skill_gap": -0.1461
+        }
+      },
+      {
+        "scenario_id": 21,
+        "parameters": {
+          "alpha_atrophy": 0.01165,
+          "red_queen_rate": 0.00542,
+          "ai_interaction_floor": 0.3405,
+          "lazy_contagion_rate": 0.01595
+        },
+        "loose": {
+          "tipping_point_epoch": 15,
+          "final_skill": 0.1598,
+          "final_quality": 0.3574,
+          "quality_skill_gap": 0.1976
+        },
+        "strict": {
+          "tipping_point_epoch": 38,
+          "final_skill": 0.603,
+          "final_quality": 0.4612,
+          "quality_skill_gap": -0.1418
+        }
+      },
+      {
+        "scenario_id": 22,
+        "parameters": {
+          "alpha_atrophy": 0.01011,
+          "red_queen_rate": 0.00045,
+          "ai_interaction_floor": 0.45161,
+          "lazy_contagion_rate": 0.02456
+        },
+        "loose": {
+          "tipping_point_epoch": 30,
+          "final_skill": 0.2677,
+          "final_quality": 0.4839,
+          "quality_skill_gap": 0.2161
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6301,
+          "final_quality": 0.494,
+          "quality_skill_gap": -0.1361
+        }
+      },
+      {
+        "scenario_id": 23,
+        "parameters": {
+          "alpha_atrophy": 0.01841,
+          "red_queen_rate": 0.00324,
+          "ai_interaction_floor": 0.63102,
+          "lazy_contagion_rate": 0.29277
+        },
+        "loose": {
+          "tipping_point_epoch": 13,
+          "final_skill": 0.025,
+          "final_quality": 0.5,
+          "quality_skill_gap": 0.475
+        },
+        "strict": {
+          "tipping_point_epoch": 40,
+          "final_skill": 0.4908,
+          "final_quality": 0.4001,
+          "quality_skill_gap": -0.0907
+        }
+      },
+      {
+        "scenario_id": 24,
+        "parameters": {
+          "alpha_atrophy": 0.00632,
+          "red_queen_rate": 0.00763,
+          "ai_interaction_floor": 0.27029,
+          "lazy_contagion_rate": 0.43734
+        },
+        "loose": {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.3672,
+          "final_quality": 0.4491,
+          "quality_skill_gap": 0.0819
+        },
+        "strict": {
+          "tipping_point_epoch": 35,
+          "final_skill": 0.6995,
+          "final_quality": 0.539,
+          "quality_skill_gap": -0.1605
+        }
+      },
+      {
+        "scenario_id": 25,
+        "parameters": {
+          "alpha_atrophy": 0.00604,
+          "red_queen_rate": 0.00836,
+          "ai_interaction_floor": 0.58527,
+          "lazy_contagion_rate": 0.43009
+        },
+        "loose": {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.4702,
+          "final_quality": 0.6463,
+          "quality_skill_gap": 0.1761
+        },
+        "strict": {
+          "tipping_point_epoch": 31,
+          "final_skill": 0.7024,
+          "final_quality": 0.5654,
+          "quality_skill_gap": -0.137
+        }
+      },
+      {
+        "scenario_id": 26,
+        "parameters": {
+          "alpha_atrophy": 0.01904,
+          "red_queen_rate": 0.00395,
+          "ai_interaction_floor": 0.37948,
+          "lazy_contagion_rate": 0.20951
+        },
+        "loose": {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.0001,
+          "final_quality": 0.2942,
+          "quality_skill_gap": 0.294
+        },
+        "strict": {
+          "tipping_point_epoch": 34,
+          "final_skill": 0.4813,
+          "final_quality": 0.3605,
+          "quality_skill_gap": -0.1208
+        }
+      },
+      {
+        "scenario_id": 27,
+        "parameters": {
+          "alpha_atrophy": 0.00881,
+          "red_queen_rate": 0.00276,
+          "ai_interaction_floor": 0.43906,
+          "lazy_contagion_rate": 0.06914
+        },
+        "loose": {
+          "tipping_point_epoch": 24,
+          "final_skill": 0.3128,
+          "final_quality": 0.5014,
+          "quality_skill_gap": 0.1886
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6496,
+          "final_quality": 0.5096,
+          "quality_skill_gap": -0.14
+        }
+      },
+      {
+        "scenario_id": 28,
+        "parameters": {
+          "alpha_atrophy": 0.01781,
+          "red_queen_rate": 0.00075,
+          "ai_interaction_floor": 0.66522,
+          "lazy_contagion_rate": 0.22872
+        },
+        "loose": {
+          "tipping_point_epoch": 16,
+          "final_skill": 0.057,
+          "final_quality": 0.5356,
+          "quality_skill_gap": 0.4786
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.5022,
+          "final_quality": 0.4144,
+          "quality_skill_gap": -0.0877
+        }
+      },
+      {
+        "scenario_id": 29,
+        "parameters": {
+          "alpha_atrophy": 0.0065,
+          "red_queen_rate": 0.00195,
+          "ai_interaction_floor": 0.4675,
+          "lazy_contagion_rate": 0.2999
+        },
+        "loose": {
+          "tipping_point_epoch": 39,
+          "final_skill": 0.4201,
+          "final_quality": 0.5718,
+          "quality_skill_gap": 0.1516
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6997,
+          "final_quality": 0.5539,
+          "quality_skill_gap": -0.1457
+        }
+      },
+      {
+        "scenario_id": 30,
+        "parameters": {
+          "alpha_atrophy": 0.01182,
+          "red_queen_rate": 0.00494,
+          "ai_interaction_floor": 0.57057,
+          "lazy_contagion_rate": 0.32414
+        },
+        "loose": {
+          "tipping_point_epoch": 16,
+          "final_skill": 0.2411,
+          "final_quality": 0.5435,
+          "quality_skill_gap": 0.3024
+        },
+        "strict": {
+          "tipping_point_epoch": 41,
+          "final_skill": 0.6018,
+          "final_quality": 0.4822,
+          "quality_skill_gap": -0.1196
+        }
+      },
+      {
+        "scenario_id": 31,
+        "parameters": {
+          "alpha_atrophy": 0.01245,
+          "red_queen_rate": 0.00583,
+          "ai_interaction_floor": 0.6153,
+          "lazy_contagion_rate": 0.16044
+        },
+        "loose": {
+          "tipping_point_epoch": 15,
+          "final_skill": 0.236,
+          "final_quality": 0.566,
+          "quality_skill_gap": 0.3301
+        },
+        "strict": {
+          "tipping_point_epoch": 34,
+          "final_skill": 0.5893,
+          "final_quality": 0.4775,
+          "quality_skill_gap": -0.1118
+        }
+      },
+      {
+        "scenario_id": 32,
+        "parameters": {
+          "alpha_atrophy": 0.01501,
+          "red_queen_rate": 0.00899,
+          "ai_interaction_floor": 0.32647,
+          "lazy_contagion_rate": 0.17261
+        },
+        "loose": {
+          "tipping_point_epoch": 10,
+          "final_skill": 0.022,
+          "final_quality": 0.2634,
+          "quality_skill_gap": 0.2414
+        },
+        "strict": {
+          "tipping_point_epoch": 21,
+          "final_skill": 0.5469,
+          "final_quality": 0.409,
+          "quality_skill_gap": -0.1379
+        }
+      },
+      {
+        "scenario_id": 33,
+        "parameters": {
+          "alpha_atrophy": 0.00694,
+          "red_queen_rate": 0.00604,
+          "ai_interaction_floor": 0.49755,
+          "lazy_contagion_rate": 0.06327
+        },
+        "loose": {
+          "tipping_point_epoch": 21,
+          "final_skill": 0.4118,
+          "final_quality": 0.5802,
+          "quality_skill_gap": 0.1684
+        },
+        "strict": {
+          "tipping_point_epoch": 45,
+          "final_skill": 0.6887,
+          "final_quality": 0.5474,
+          "quality_skill_gap": -0.1414
+        }
+      },
+      {
+        "scenario_id": 34,
+        "parameters": {
+          "alpha_atrophy": 0.01524,
+          "red_queen_rate": 0.00654,
+          "ai_interaction_floor": 0.52285,
+          "lazy_contagion_rate": 0.36688
+        },
+        "loose": {
+          "tipping_point_epoch": 12,
+          "final_skill": 0.0834,
+          "final_quality": 0.4445,
+          "quality_skill_gap": 0.3611
+        },
+        "strict": {
+          "tipping_point_epoch": 27,
+          "final_skill": 0.5379,
+          "final_quality": 0.4249,
+          "quality_skill_gap": -0.1131
+        }
+      },
+      {
+        "scenario_id": 35,
+        "parameters": {
+          "alpha_atrophy": 0.01342,
+          "red_queen_rate": 0.0097,
+          "ai_interaction_floor": 0.52454,
+          "lazy_contagion_rate": 0.28611
+        },
+        "loose": {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.1615,
+          "final_quality": 0.4802,
+          "quality_skill_gap": 0.3187
+        },
+        "strict": {
+          "tipping_point_epoch": 20,
+          "final_skill": 0.5749,
+          "final_quality": 0.4562,
+          "quality_skill_gap": -0.1188
+        }
+      },
+      {
+        "scenario_id": 36,
+        "parameters": {
+          "alpha_atrophy": 0.0173,
+          "red_queen_rate": 0.00618,
+          "ai_interaction_floor": 0.64891,
+          "lazy_contagion_rate": 0.07973
+        },
+        "loose": {
+          "tipping_point_epoch": 12,
+          "final_skill": 0.0721,
+          "final_quality": 0.5243,
+          "quality_skill_gap": 0.4522
+        },
+        "strict": {
+          "tipping_point_epoch": 27,
+          "final_skill": 0.5105,
+          "final_quality": 0.4187,
+          "quality_skill_gap": -0.0918
+        }
+      },
+      {
+        "scenario_id": 37,
+        "parameters": {
+          "alpha_atrophy": 0.01114,
+          "red_queen_rate": 0.00745,
+          "ai_interaction_floor": 0.6956,
+          "lazy_contagion_rate": 0.05606
+        },
+        "loose": {
+          "tipping_point_epoch": 15,
+          "final_skill": 0.3188,
+          "final_quality": 0.6386,
+          "quality_skill_gap": 0.3198
+        },
+        "strict": {
+          "tipping_point_epoch": 29,
+          "final_skill": 0.6174,
+          "final_quality": 0.5075,
+          "quality_skill_gap": -0.1099
+        }
+      },
+      {
+        "scenario_id": 38,
+        "parameters": {
+          "alpha_atrophy": 0.01445,
+          "red_queen_rate": 0.00864,
+          "ai_interaction_floor": 0.3909,
+          "lazy_contagion_rate": 0.4285
+        },
+        "loose": {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.0571,
+          "final_quality": 0.3358,
+          "quality_skill_gap": 0.2787
+        },
+        "strict": {
+          "tipping_point_epoch": 21,
+          "final_skill": 0.5522,
+          "final_quality": 0.4219,
+          "quality_skill_gap": -0.1303
+        }
+      },
+      {
+        "scenario_id": 39,
+        "parameters": {
+          "alpha_atrophy": 0.00518,
+          "red_queen_rate": 0.00215,
+          "ai_interaction_floor": 0.40576,
+          "lazy_contagion_rate": 0.31894
+        },
+        "loose": {
+          "tipping_point_epoch": 41,
+          "final_skill": 0.4484,
+          "final_quality": 0.5601,
+          "quality_skill_gap": 0.1117
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.7108,
+          "final_quality": 0.5591,
+          "quality_skill_gap": -0.1516
+        }
+      },
+      {
+        "scenario_id": 40,
+        "parameters": {
+          "alpha_atrophy": 0.01659,
+          "red_queen_rate": 0.00346,
+          "ai_interaction_floor": 0.34446,
+          "lazy_contagion_rate": 0.37921
+        },
+        "loose": {
+          "tipping_point_epoch": 13,
+          "final_skill": 0.0026,
+          "final_quality": 0.2698,
+          "quality_skill_gap": 0.2672
+        },
+        "strict": {
+          "tipping_point_epoch": 42,
+          "final_skill": 0.5163,
+          "final_quality": 0.3858,
+          "quality_skill_gap": -0.1305
+        }
+      },
+      {
+        "scenario_id": 41,
+        "parameters": {
+          "alpha_atrophy": 0.00917,
+          "red_queen_rate": 0.00883,
+          "ai_interaction_floor": 0.56553,
+          "lazy_contagion_rate": 0.18332
+        },
+        "loose": {
+          "tipping_point_epoch": 15,
+          "final_skill": 0.3447,
+          "final_quality": 0.5821,
+          "quality_skill_gap": 0.2375
+        },
+        "strict": {
+          "tipping_point_epoch": 26,
+          "final_skill": 0.6488,
+          "final_quality": 0.5194,
+          "quality_skill_gap": -0.1294
+        }
+      },
+      {
+        "scenario_id": 42,
+        "parameters": {
+          "alpha_atrophy": 0.00846,
+          "red_queen_rate": 0.00145,
+          "ai_interaction_floor": 0.7318,
+          "lazy_contagion_rate": 0.40031
+        },
+        "loose": {
+          "tipping_point_epoch": 42,
+          "final_skill": 0.425,
+          "final_quality": 0.6938,
+          "quality_skill_gap": 0.2689
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6655,
+          "final_quality": 0.5477,
+          "quality_skill_gap": -0.1177
+        }
+      },
+      {
+        "scenario_id": 43,
+        "parameters": {
+          "alpha_atrophy": 0.01942,
+          "red_queen_rate": 0.00817,
+          "ai_interaction_floor": 0.49213,
+          "lazy_contagion_rate": 0.1908
+        },
+        "loose": {
+          "tipping_point_epoch": 9,
+          "final_skill": 0.0004,
+          "final_quality": 0.3809,
+          "quality_skill_gap": 0.3806
+        },
+        "strict": {
+          "tipping_point_epoch": 20,
+          "final_skill": 0.4674,
+          "final_quality": 0.363,
+          "quality_skill_gap": -0.1044
+        }
+      },
+      {
+        "scenario_id": 44,
+        "parameters": {
+          "alpha_atrophy": 0.01062,
+          "red_queen_rate": 0.00505,
+          "ai_interaction_floor": 0.60196,
+          "lazy_contagion_rate": 0.25867
+        },
+        "loose": {
+          "tipping_point_epoch": 18,
+          "final_skill": 0.2989,
+          "final_quality": 0.5838,
+          "quality_skill_gap": 0.2849
+        },
+        "strict": {
+          "tipping_point_epoch": 43,
+          "final_skill": 0.6203,
+          "final_quality": 0.5001,
+          "quality_skill_gap": -0.1202
+        }
+      },
+      {
+        "scenario_id": 45,
+        "parameters": {
+          "alpha_atrophy": 0.01412,
+          "red_queen_rate": 0.0008,
+          "ai_interaction_floor": 0.71566,
+          "lazy_contagion_rate": 0.35842
+        },
+        "loose": {
+          "tipping_point_epoch": 23,
+          "final_skill": 0.2099,
+          "final_quality": 0.6216,
+          "quality_skill_gap": 0.4117
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.566,
+          "final_quality": 0.4692,
+          "quality_skill_gap": -0.0968
+        }
+      },
+      {
+        "scenario_id": 46,
+        "parameters": {
+          "alpha_atrophy": 0.01637,
+          "red_queen_rate": 0.0039,
+          "ai_interaction_floor": 0.66375,
+          "lazy_contagion_rate": 0.31231
+        },
+        "loose": {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.1072,
+          "final_quality": 0.5533,
+          "quality_skill_gap": 0.4462
+        },
+        "strict": {
+          "tipping_point_epoch": 40,
+          "final_skill": 0.5285,
+          "final_quality": 0.4341,
+          "quality_skill_gap": -0.0944
+        }
+      },
+      {
+        "scenario_id": 47,
+        "parameters": {
+          "alpha_atrophy": 0.01877,
+          "red_queen_rate": 0.00565,
+          "ai_interaction_floor": 0.55967,
+          "lazy_contagion_rate": 0.41248
+        },
+        "loose": {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.0046,
+          "final_quality": 0.44,
+          "quality_skill_gap": 0.4354
+        },
+        "strict": {
+          "tipping_point_epoch": 27,
+          "final_skill": 0.4855,
+          "final_quality": 0.3858,
+          "quality_skill_gap": -0.0997
+        }
+      },
+      {
+        "scenario_id": 48,
+        "parameters": {
+          "alpha_atrophy": 0.00749,
+          "red_queen_rate": 0.00995,
+          "ai_interaction_floor": 0.7228,
+          "lazy_contagion_rate": 0.04703
+        },
+        "loose": {
+          "tipping_point_epoch": 15,
+          "final_skill": 0.4587,
+          "final_quality": 0.6961,
+          "quality_skill_gap": 0.2374
+        },
+        "strict": {
+          "tipping_point_epoch": 23,
+          "final_skill": 0.6759,
+          "final_quality": 0.5551,
+          "quality_skill_gap": -0.1208
+        }
+      },
+      {
+        "scenario_id": 49,
+        "parameters": {
+          "alpha_atrophy": 0.01349,
+          "red_queen_rate": 0.00852,
+          "ai_interaction_floor": 0.27706,
+          "lazy_contagion_rate": 0.36515
+        },
+        "loose": {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.0537,
+          "final_quality": 0.2479,
+          "quality_skill_gap": 0.1942
+        },
+        "strict": {
+          "tipping_point_epoch": 23,
+          "final_skill": 0.5741,
+          "final_quality": 0.4275,
+          "quality_skill_gap": -0.1466
+        }
+      },
+      {
+        "scenario_id": 50,
+        "parameters": {
+          "alpha_atrophy": 0.01817,
+          "red_queen_rate": 0.00473,
+          "ai_interaction_floor": 0.42127,
+          "lazy_contagion_rate": 0.13363
+        },
+        "loose": {
+          "tipping_point_epoch": 11,
+          "final_skill": 0.0009,
+          "final_quality": 0.3247,
+          "quality_skill_gap": 0.3239
+        },
+        "strict": {
+          "tipping_point_epoch": 31,
+          "final_skill": 0.489,
+          "final_quality": 0.3716,
+          "quality_skill_gap": -0.1175
+        }
+      },
+      {
+        "scenario_id": 51,
+        "parameters": {
+          "alpha_atrophy": 0.01384,
+          "red_queen_rate": 0.00771,
+          "ai_interaction_floor": 0.64131,
+          "lazy_contagion_rate": 0.2154
+        },
+        "loose": {
+          "tipping_point_epoch": 12,
+          "final_skill": 0.1951,
+          "final_quality": 0.5669,
+          "quality_skill_gap": 0.3717
+        },
+        "strict": {
+          "tipping_point_epoch": 25,
+          "final_skill": 0.5698,
+          "final_quality": 0.464,
+          "quality_skill_gap": -0.1058
+        }
+      },
+      {
+        "scenario_id": 52,
+        "parameters": {
+          "alpha_atrophy": 0.00529,
+          "red_queen_rate": 0.00679,
+          "ai_interaction_floor": 0.73914,
+          "lazy_contagion_rate": 0.07034
+        },
+        "loose": {
+          "tipping_point_epoch": 25,
+          "final_skill": 0.5405,
+          "final_quality": 0.7274,
+          "quality_skill_gap": 0.1869
+        },
+        "strict": {
+          "tipping_point_epoch": 41,
+          "final_skill": 0.7114,
+          "final_quality": 0.5835,
+          "quality_skill_gap": -0.1278
+        }
+      },
+      {
+        "scenario_id": 53,
+        "parameters": {
+          "alpha_atrophy": 0.0059,
+          "red_queen_rate": 0.00433,
+          "ai_interaction_floor": 0.53744,
+          "lazy_contagion_rate": 0.00417
+        },
+        "loose": {
+          "tipping_point_epoch": 30,
+          "final_skill": 0.4675,
+          "final_quality": 0.6221,
+          "quality_skill_gap": 0.1546
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.7096,
+          "final_quality": 0.5665,
+          "quality_skill_gap": -0.1431
+        }
+      },
+      {
+        "scenario_id": 54,
+        "parameters": {
+          "alpha_atrophy": 0.01318,
+          "red_queen_rate": 0.00099,
+          "ai_interaction_floor": 0.67427,
+          "lazy_contagion_rate": 0.20355
+        },
+        "loose": {
+          "tipping_point_epoch": 24,
+          "final_skill": 0.232,
+          "final_quality": 0.5998,
+          "quality_skill_gap": 0.3678
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.5805,
+          "final_quality": 0.476,
+          "quality_skill_gap": -0.1045
+        }
+      },
+      {
+        "scenario_id": 55,
+        "parameters": {
+          "alpha_atrophy": 0.01428,
+          "red_queen_rate": 0.00056,
+          "ai_interaction_floor": 0.46945,
+          "lazy_contagion_rate": 0.30834
+        },
+        "loose": {
+          "tipping_point_epoch": 19,
+          "final_skill": 0.1021,
+          "final_quality": 0.4151,
+          "quality_skill_gap": 0.313
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.5586,
+          "final_quality": 0.4367,
+          "quality_skill_gap": -0.1219
+        }
+      },
+      {
+        "scenario_id": 56,
+        "parameters": {
+          "alpha_atrophy": 0.01985,
+          "red_queen_rate": 0.00117,
+          "ai_interaction_floor": 0.5019,
+          "lazy_contagion_rate": 0.42174
+        },
+        "loose": {
+          "tipping_point_epoch": 13,
+          "final_skill": 0.0002,
+          "final_quality": 0.3939,
+          "quality_skill_gap": 0.3937
+        },
+        "strict": {
+          "tipping_point_epoch": 58,
+          "final_skill": 0.4635,
+          "final_quality": 0.3611,
+          "quality_skill_gap": -0.1024
+        }
+      },
+      {
+        "scenario_id": 57,
+        "parameters": {
+          "alpha_atrophy": 0.01069,
+          "red_queen_rate": 0.00692,
+          "ai_interaction_floor": 0.58595,
+          "lazy_contagion_rate": 0.01125
+        },
+        "loose": {
+          "tipping_point_epoch": 15,
+          "final_skill": 0.2944,
+          "final_quality": 0.5709,
+          "quality_skill_gap": 0.2765
+        },
+        "strict": {
+          "tipping_point_epoch": 31,
+          "final_skill": 0.6196,
+          "final_quality": 0.4989,
+          "quality_skill_gap": -0.1207
+        }
+      },
+      {
+        "scenario_id": 58,
+        "parameters": {
+          "alpha_atrophy": 0.0076,
+          "red_queen_rate": 0.00953,
+          "ai_interaction_floor": 0.41366,
+          "lazy_contagion_rate": 0.22094
+        },
+        "loose": {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.3542,
+          "final_quality": 0.5112,
+          "quality_skill_gap": 0.157
+        },
+        "strict": {
+          "tipping_point_epoch": 25,
+          "final_skill": 0.6738,
+          "final_quality": 0.5276,
+          "quality_skill_gap": -0.1461
+        }
+      },
+      {
+        "scenario_id": 59,
+        "parameters": {
+          "alpha_atrophy": 0.00665,
+          "red_queen_rate": 0.00173,
+          "ai_interaction_floor": 0.35187,
+          "lazy_contagion_rate": 0.16745
+        },
+        "loose": {
+          "tipping_point_epoch": 35,
+          "final_skill": 0.3775,
+          "final_quality": 0.4951,
+          "quality_skill_gap": 0.1176
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.6939,
+          "final_quality": 0.541,
+          "quality_skill_gap": -0.153
+        }
+      },
+      {
+        "scenario_id": 60,
+        "parameters": {
+          "alpha_atrophy": 0.0093,
+          "red_queen_rate": 0.00704,
+          "ai_interaction_floor": 0.30815,
+          "lazy_contagion_rate": 0.12245
+        },
+        "loose": {
+          "tipping_point_epoch": 15,
+          "final_skill": 0.2505,
+          "final_quality": 0.3927,
+          "quality_skill_gap": 0.1422
+        },
+        "strict": {
+          "tipping_point_epoch": 33,
+          "final_skill": 0.6497,
+          "final_quality": 0.4973,
+          "quality_skill_gap": -0.1524
+        }
+      },
+      {
+        "scenario_id": 61,
+        "parameters": {
+          "alpha_atrophy": 0.00826,
+          "red_queen_rate": 0.0092,
+          "ai_interaction_floor": 0.42678,
+          "lazy_contagion_rate": 0.17686
+        },
+        "loose": {
+          "tipping_point_epoch": 14,
+          "final_skill": 0.3326,
+          "final_quality": 0.5063,
+          "quality_skill_gap": 0.1736
+        },
+        "strict": {
+          "tipping_point_epoch": 25,
+          "final_skill": 0.6627,
+          "final_quality": 0.5196,
+          "quality_skill_gap": -0.1431
+        }
+      },
+      {
+        "scenario_id": 62,
+        "parameters": {
+          "alpha_atrophy": 0.00733,
+          "red_queen_rate": 0.00417,
+          "ai_interaction_floor": 0.25972,
+          "lazy_contagion_rate": 0.03082
+        },
+        "loose": {
+          "tipping_point_epoch": 22,
+          "final_skill": 0.3188,
+          "final_quality": 0.4107,
+          "quality_skill_gap": 0.0919
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.68,
+          "final_quality": 0.5204,
+          "quality_skill_gap": -0.1596
+        }
+      },
+      {
+        "scenario_id": 63,
+        "parameters": {
+          "alpha_atrophy": 0.01268,
+          "red_queen_rate": 0.00015,
+          "ai_interaction_floor": 0.43587,
+          "lazy_contagion_rate": 0.10993
+        },
+        "loose": {
+          "tipping_point_epoch": 23,
+          "final_skill": 0.1584,
+          "final_quality": 0.4187,
+          "quality_skill_gap": 0.2603
+        },
+        "strict": {
+          "tipping_point_epoch": null,
+          "final_skill": 0.5894,
+          "final_quality": 0.4591,
+          "quality_skill_gap": -0.1303
+        }
+      }
+    ],
+    "summary": {
+      "n_scenarios": 64,
+      "loose_crossing_share": 1.0,
+      "strict_crossing_share": 0.7188,
+      "loose_earlier_crossing_share": 1.0,
+      "strict_final_skill_higher_share": 1.0,
+      "loose_gap_larger_share": 1.0,
+      "strict_minus_loose_final_skill_p10_p50_p90": [
+        0.2602,
+        0.4063,
+        0.5044
+      ],
+      "loose_minus_strict_gap_p10_p50_p90": [
+        0.2954,
+        0.3982,
+        0.539
+      ]
+    }
+  },
+  "immediate_ai_removal_exposure": {
+    "definition": "Immediate one-period AI-removal exposure sets output quality to contemporaneous standalone skill S_t.",
+    "rows": [
+      {
+        "regime": "loose",
+        "period": 18,
+        "augmented_quality": 0.6175,
+        "standalone_quality_if_ai_removed": 0.486,
+        "immediate_quality_change": -0.1316,
+        "quality_skill_gap": 0.1316
+      },
+      {
+        "regime": "loose",
+        "period": 46,
+        "augmented_quality": 0.5494,
+        "standalone_quality_if_ai_removed": 0.3425,
+        "immediate_quality_change": -0.2069,
+        "quality_skill_gap": 0.2069
+      },
+      {
+        "regime": "loose",
+        "period": 59,
+        "augmented_quality": 0.5238,
+        "standalone_quality_if_ai_removed": 0.2882,
+        "immediate_quality_change": -0.2356,
+        "quality_skill_gap": 0.2356
+      },
+      {
+        "regime": "strict",
+        "period": 18,
+        "augmented_quality": 0.4839,
+        "standalone_quality_if_ai_removed": 0.612,
+        "immediate_quality_change": 0.1281,
+        "quality_skill_gap": -0.1281
+      },
+      {
+        "regime": "strict",
+        "period": 46,
+        "augmented_quality": 0.4973,
+        "standalone_quality_if_ai_removed": 0.6283,
+        "immediate_quality_change": 0.131,
+        "quality_skill_gap": -0.131
+      },
+      {
+        "regime": "strict",
+        "period": 59,
+        "augmented_quality": 0.5033,
+        "standalone_quality_if_ai_removed": 0.6355,
+        "immediate_quality_change": 0.1322,
+        "quality_skill_gap": -0.1322
+      }
+    ]
+  }
+}

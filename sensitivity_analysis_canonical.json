@@ -1,0 +1,155 @@
+{
+  "alpha_atrophy": [
+    {
+      "param_value": 0.005,
+      "tipping_point_epoch": 29,
+      "final_skill": 0.4893,
+      "final_quality": 0.6193,
+      "quality_skill_gap": 0.13
+    },
+    {
+      "param_value": 0.0075,
+      "tipping_point_epoch": 22,
+      "final_skill": 0.3886,
+      "final_quality": 0.5714,
+      "quality_skill_gap": 0.1828
+    },
+    {
+      "param_value": 0.01,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.2884,
+      "final_quality": 0.5239,
+      "quality_skill_gap": 0.2355
+    },
+    {
+      "param_value": 0.0125,
+      "tipping_point_epoch": 15,
+      "final_skill": 0.1885,
+      "final_quality": 0.4766,
+      "quality_skill_gap": 0.2881
+    },
+    {
+      "param_value": 0.015,
+      "tipping_point_epoch": 13,
+      "final_skill": 0.0888,
+      "final_quality": 0.4295,
+      "quality_skill_gap": 0.3407
+    },
+    {
+      "param_value": 0.0175,
+      "tipping_point_epoch": 12,
+      "final_skill": 0.0114,
+      "final_quality": 0.3939,
+      "quality_skill_gap": 0.3825
+    },
+    {
+      "param_value": 0.02,
+      "tipping_point_epoch": 10,
+      "final_skill": 0.0001,
+      "final_quality": 0.3894,
+      "quality_skill_gap": 0.3892
+    }
+  ],
+  "beta_dependency": [
+    {
+      "param_value": 1.0,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.2903,
+      "final_quality": 0.5235,
+      "quality_skill_gap": 0.2332
+    },
+    {
+      "param_value": 1.3333,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.2896,
+      "final_quality": 0.5236,
+      "quality_skill_gap": 0.234
+    },
+    {
+      "param_value": 1.6667,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.289,
+      "final_quality": 0.5238,
+      "quality_skill_gap": 0.2348
+    },
+    {
+      "param_value": 2.0,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.2884,
+      "final_quality": 0.5239,
+      "quality_skill_gap": 0.2355
+    },
+    {
+      "param_value": 2.3333,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.2879,
+      "final_quality": 0.524,
+      "quality_skill_gap": 0.2361
+    },
+    {
+      "param_value": 2.6667,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.2874,
+      "final_quality": 0.5241,
+      "quality_skill_gap": 0.2367
+    },
+    {
+      "param_value": 3.0,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.2869,
+      "final_quality": 0.5242,
+      "quality_skill_gap": 0.2373
+    }
+  ],
+  "learning_rate": [
+    {
+      "param_value": 0.0025,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.278,
+      "final_quality": 0.519,
+      "quality_skill_gap": 0.241
+    },
+    {
+      "param_value": 0.0037,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.2832,
+      "final_quality": 0.5214,
+      "quality_skill_gap": 0.2382
+    },
+    {
+      "param_value": 0.005,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.2884,
+      "final_quality": 0.5239,
+      "quality_skill_gap": 0.2355
+    },
+    {
+      "param_value": 0.0063,
+      "tipping_point_epoch": 18,
+      "final_skill": 0.2937,
+      "final_quality": 0.5264,
+      "quality_skill_gap": 0.2327
+    },
+    {
+      "param_value": 0.0075,
+      "tipping_point_epoch": 19,
+      "final_skill": 0.2989,
+      "final_quality": 0.5289,
+      "quality_skill_gap": 0.2299
+    },
+    {
+      "param_value": 0.0088,
+      "tipping_point_epoch": 19,
+      "final_skill": 0.3042,
+      "final_quality": 0.5313,
+      "quality_skill_gap": 0.2272
+    },
+    {
+      "param_value": 0.01,
+      "tipping_point_epoch": 19,
+      "final_skill": 0.3094,
+      "final_quality": 0.5338,
+      "quality_skill_gap": 0.2244
+    }
+  ]
+}
